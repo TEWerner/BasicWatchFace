@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\manifest.xml"/>
+<pcToLineNum>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceApp.mc" id="1" lineNum="26" parent="globals" pc="268435460" symbol="getApp"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceApp.mc" id="1" lineNum="27" parent="globals" pc="268435470" symbol="getApp"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="2" lineNum="8" parent="globals/BasicWatchFaceView" pc="268435481" symbol="&lt;init&gt;"/>
+<entry filename="c:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\bin\\gen\\006-B4314-00\\source\\Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435493" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceApp.mc" id="4" lineNum="5" parent="globals/BasicWatchFaceApp" pc="268435513" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="5" lineNum="301" parent="globals/BasicWatchFaceView" pc="268435525" symbol="getDayName"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="5" lineNum="303" parent="globals/BasicWatchFaceView" pc="268435528" symbol="getDayName"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="5" lineNum="308" parent="globals/BasicWatchFaceView" pc="268435535" symbol="getDayName"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="5" lineNum="309" parent="globals/BasicWatchFaceView" pc="268435551" symbol="getDayName"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="5" lineNum="311" parent="globals/BasicWatchFaceView" pc="268435563" symbol="getDayName"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="6" lineNum="315" parent="globals/BasicWatchFaceView" pc="268435570" symbol="getMonthName"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="6" lineNum="317" parent="globals/BasicWatchFaceView" pc="268435573" symbol="getMonthName"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="6" lineNum="324" parent="globals/BasicWatchFaceView" pc="268435580" symbol="getMonthName"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="6" lineNum="325" parent="globals/BasicWatchFaceView" pc="268435596" symbol="getMonthName"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="6" lineNum="327" parent="globals/BasicWatchFaceView" pc="268435608" symbol="getMonthName"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="7" lineNum="202" parent="globals/BasicWatchFaceView" pc="268435615" symbol="drawTime"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="7" lineNum="203" parent="globals/BasicWatchFaceView" pc="268435618" symbol="drawTime"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="7" lineNum="204" parent="globals/BasicWatchFaceView" pc="268435625" symbol="drawTime"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="7" lineNum="205" parent="globals/BasicWatchFaceView" pc="268435637" symbol="drawTime"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="7" lineNum="206" parent="globals/BasicWatchFaceView" pc="268435645" symbol="drawTime"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="7" lineNum="207" parent="globals/BasicWatchFaceView" pc="268435661" symbol="drawTime"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="7" lineNum="209" parent="globals/BasicWatchFaceView" pc="268435708" symbol="drawTime"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="7" lineNum="211" parent="globals/BasicWatchFaceView" pc="268435725" symbol="drawTime"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="8" lineNum="146" parent="globals/BasicWatchFaceView" pc="268435765" symbol="onLayout"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="8" lineNum="147" parent="globals/BasicWatchFaceView" pc="268435767" symbol="onLayout"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="9" lineNum="173" parent="globals/BasicWatchFaceView" pc="268435801" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="9" lineNum="174" parent="globals/BasicWatchFaceView" pc="268435804" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="9" lineNum="175" parent="globals/BasicWatchFaceView" pc="268435820" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="9" lineNum="176" parent="globals/BasicWatchFaceView" pc="268435832" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="9" lineNum="177" parent="globals/BasicWatchFaceView" pc="268435840" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="9" lineNum="182" parent="globals/BasicWatchFaceView" pc="268435848" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="9" lineNum="183" parent="globals/BasicWatchFaceView" pc="268435853" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="9" lineNum="185" parent="globals/BasicWatchFaceView" pc="268435863" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="9" lineNum="186" parent="globals/BasicWatchFaceView" pc="268435871" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="9" lineNum="187" parent="globals/BasicWatchFaceView" pc="268435881" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="9" lineNum="188" parent="globals/BasicWatchFaceView" pc="268435889" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="9" lineNum="189" parent="globals/BasicWatchFaceView" pc="268435899" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="9" lineNum="190" parent="globals/BasicWatchFaceView" pc="268435907" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="9" lineNum="191" parent="globals/BasicWatchFaceView" pc="268435917" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="9" lineNum="192" parent="globals/BasicWatchFaceView" pc="268435925" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="9" lineNum="193" parent="globals/BasicWatchFaceView" pc="268435935" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="9" lineNum="194" parent="globals/BasicWatchFaceView" pc="268435943" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="9" lineNum="196" parent="globals/BasicWatchFaceView" pc="268435953" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="9" lineNum="199" parent="globals/BasicWatchFaceView" pc="268435960" symbol="drawBattery"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="339" parent="globals/BasicWatchFaceView" pc="268436002" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="340" parent="globals/BasicWatchFaceView" pc="268436004" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="341" parent="globals/BasicWatchFaceView" pc="268436006" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="343" parent="globals/BasicWatchFaceView" pc="268436021" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="345" parent="globals/BasicWatchFaceView" pc="268436037" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="347" parent="globals/BasicWatchFaceView" pc="268436053" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="349" parent="globals/BasicWatchFaceView" pc="268436069" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="351" parent="globals/BasicWatchFaceView" pc="268436085" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="353" parent="globals/BasicWatchFaceView" pc="268436101" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="355" parent="globals/BasicWatchFaceView" pc="268436117" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="357" parent="globals/BasicWatchFaceView" pc="268436133" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="359" parent="globals/BasicWatchFaceView" pc="268436149" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="361" parent="globals/BasicWatchFaceView" pc="268436165" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="363" parent="globals/BasicWatchFaceView" pc="268436181" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="365" parent="globals/BasicWatchFaceView" pc="268436197" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="367" parent="globals/BasicWatchFaceView" pc="268436213" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="369" parent="globals/BasicWatchFaceView" pc="268436229" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="371" parent="globals/BasicWatchFaceView" pc="268436245" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="373" parent="globals/BasicWatchFaceView" pc="268436261" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="375" parent="globals/BasicWatchFaceView" pc="268436277" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="377" parent="globals/BasicWatchFaceView" pc="268436293" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="379" parent="globals/BasicWatchFaceView" pc="268436309" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="381" parent="globals/BasicWatchFaceView" pc="268436325" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="383" parent="globals/BasicWatchFaceView" pc="268436341" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="385" parent="globals/BasicWatchFaceView" pc="268436357" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="387" parent="globals/BasicWatchFaceView" pc="268436373" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="389" parent="globals/BasicWatchFaceView" pc="268436389" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="391" parent="globals/BasicWatchFaceView" pc="268436405" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="393" parent="globals/BasicWatchFaceView" pc="268436421" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="395" parent="globals/BasicWatchFaceView" pc="268436437" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="397" parent="globals/BasicWatchFaceView" pc="268436453" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="399" parent="globals/BasicWatchFaceView" pc="268436469" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="401" parent="globals/BasicWatchFaceView" pc="268436485" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="403" parent="globals/BasicWatchFaceView" pc="268436501" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="405" parent="globals/BasicWatchFaceView" pc="268436517" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="407" parent="globals/BasicWatchFaceView" pc="268436533" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="409" parent="globals/BasicWatchFaceView" pc="268436549" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="411" parent="globals/BasicWatchFaceView" pc="268436565" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="413" parent="globals/BasicWatchFaceView" pc="268436581" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="415" parent="globals/BasicWatchFaceView" pc="268436597" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="417" parent="globals/BasicWatchFaceView" pc="268436613" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="419" parent="globals/BasicWatchFaceView" pc="268436629" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="421" parent="globals/BasicWatchFaceView" pc="268436645" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="423" parent="globals/BasicWatchFaceView" pc="268436661" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="425" parent="globals/BasicWatchFaceView" pc="268436677" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="427" parent="globals/BasicWatchFaceView" pc="268436693" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="429" parent="globals/BasicWatchFaceView" pc="268436709" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="431" parent="globals/BasicWatchFaceView" pc="268436725" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="433" parent="globals/BasicWatchFaceView" pc="268436741" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="435" parent="globals/BasicWatchFaceView" pc="268436757" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="437" parent="globals/BasicWatchFaceView" pc="268436773" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="439" parent="globals/BasicWatchFaceView" pc="268436789" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="441" parent="globals/BasicWatchFaceView" pc="268436805" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="443" parent="globals/BasicWatchFaceView" pc="268436821" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="445" parent="globals/BasicWatchFaceView" pc="268436837" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="447" parent="globals/BasicWatchFaceView" pc="268436853" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="449" parent="globals/BasicWatchFaceView" pc="268436869" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="342" parent="globals/BasicWatchFaceView" pc="268436872" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="344" parent="globals/BasicWatchFaceView" pc="268436878" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="346" parent="globals/BasicWatchFaceView" pc="268436884" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="348" parent="globals/BasicWatchFaceView" pc="268436890" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="350" parent="globals/BasicWatchFaceView" pc="268436896" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="352" parent="globals/BasicWatchFaceView" pc="268436902" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="354" parent="globals/BasicWatchFaceView" pc="268436908" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="356" parent="globals/BasicWatchFaceView" pc="268436914" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="358" parent="globals/BasicWatchFaceView" pc="268436920" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="360" parent="globals/BasicWatchFaceView" pc="268436926" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="362" parent="globals/BasicWatchFaceView" pc="268436932" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="364" parent="globals/BasicWatchFaceView" pc="268436938" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="366" parent="globals/BasicWatchFaceView" pc="268436944" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="368" parent="globals/BasicWatchFaceView" pc="268436950" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="370" parent="globals/BasicWatchFaceView" pc="268436956" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="372" parent="globals/BasicWatchFaceView" pc="268436962" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="374" parent="globals/BasicWatchFaceView" pc="268436968" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="376" parent="globals/BasicWatchFaceView" pc="268436974" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="378" parent="globals/BasicWatchFaceView" pc="268436980" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="380" parent="globals/BasicWatchFaceView" pc="268436986" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="382" parent="globals/BasicWatchFaceView" pc="268436992" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="384" parent="globals/BasicWatchFaceView" pc="268436998" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="386" parent="globals/BasicWatchFaceView" pc="268437004" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="388" parent="globals/BasicWatchFaceView" pc="268437010" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="390" parent="globals/BasicWatchFaceView" pc="268437016" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="392" parent="globals/BasicWatchFaceView" pc="268437022" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="394" parent="globals/BasicWatchFaceView" pc="268437028" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="396" parent="globals/BasicWatchFaceView" pc="268437034" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="398" parent="globals/BasicWatchFaceView" pc="268437040" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="400" parent="globals/BasicWatchFaceView" pc="268437046" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="402" parent="globals/BasicWatchFaceView" pc="268437052" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="404" parent="globals/BasicWatchFaceView" pc="268437058" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="406" parent="globals/BasicWatchFaceView" pc="268437064" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="408" parent="globals/BasicWatchFaceView" pc="268437070" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="410" parent="globals/BasicWatchFaceView" pc="268437076" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="412" parent="globals/BasicWatchFaceView" pc="268437082" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="414" parent="globals/BasicWatchFaceView" pc="268437088" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="416" parent="globals/BasicWatchFaceView" pc="268437094" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="418" parent="globals/BasicWatchFaceView" pc="268437100" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="420" parent="globals/BasicWatchFaceView" pc="268437106" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="422" parent="globals/BasicWatchFaceView" pc="268437112" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="424" parent="globals/BasicWatchFaceView" pc="268437118" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="426" parent="globals/BasicWatchFaceView" pc="268437124" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="428" parent="globals/BasicWatchFaceView" pc="268437130" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="430" parent="globals/BasicWatchFaceView" pc="268437136" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="432" parent="globals/BasicWatchFaceView" pc="268437142" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="434" parent="globals/BasicWatchFaceView" pc="268437148" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="436" parent="globals/BasicWatchFaceView" pc="268437154" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="438" parent="globals/BasicWatchFaceView" pc="268437160" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="440" parent="globals/BasicWatchFaceView" pc="268437166" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="442" parent="globals/BasicWatchFaceView" pc="268437172" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="444" parent="globals/BasicWatchFaceView" pc="268437178" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="446" parent="globals/BasicWatchFaceView" pc="268437184" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="448" parent="globals/BasicWatchFaceView" pc="268437190" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="11" lineNum="450" parent="globals/BasicWatchFaceView" pc="268437196" symbol="getWeatherIcon"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="12" lineNum="287" parent="globals/BasicWatchFaceView" pc="268437204" symbol="drawDate"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="12" lineNum="288" parent="globals/BasicWatchFaceView" pc="268437207" symbol="drawDate"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="12" lineNum="289" parent="globals/BasicWatchFaceView" pc="268437220" symbol="drawDate"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="12" lineNum="290" parent="globals/BasicWatchFaceView" pc="268437237" symbol="drawDate"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="12" lineNum="292" parent="globals/BasicWatchFaceView" pc="268437303" symbol="drawDate"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="13" lineNum="267" parent="globals/BasicWatchFaceView" pc="268437335" symbol="drawSteps"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="13" lineNum="268" parent="globals/BasicWatchFaceView" pc="268437338" symbol="drawSteps"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="13" lineNum="269" parent="globals/BasicWatchFaceView" pc="268437362" symbol="drawSteps"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="13" lineNum="270" parent="globals/BasicWatchFaceView" pc="268437383" symbol="drawSteps"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="13" lineNum="272" parent="globals/BasicWatchFaceView" pc="268437401" symbol="drawSteps"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="13" lineNum="278" parent="globals/BasicWatchFaceView" pc="268437428" symbol="drawSteps"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="14" lineNum="220" parent="globals/BasicWatchFaceView" pc="268437463" symbol="drawHR"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="14" lineNum="222" parent="globals/BasicWatchFaceView" pc="268437466" symbol="drawHR"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="14" lineNum="224" parent="globals/BasicWatchFaceView" pc="268437474" symbol="drawHR"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="14" lineNum="225" parent="globals/BasicWatchFaceView" pc="268437495" symbol="drawHR"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="14" lineNum="227" parent="globals/BasicWatchFaceView" pc="268437513" symbol="drawHR"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="14" lineNum="233" parent="globals/BasicWatchFaceView" pc="268437532" symbol="drawHR"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="15" lineNum="163" parent="globals/BasicWatchFaceView" pc="268437559" symbol="drawWeather"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="15" lineNum="166" parent="globals/BasicWatchFaceView" pc="268437562" symbol="drawWeather"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="15" lineNum="168" parent="globals/BasicWatchFaceView" pc="268437576" symbol="drawWeather"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="15" lineNum="169" parent="globals/BasicWatchFaceView" pc="268437599" symbol="drawWeather"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="15" lineNum="170" parent="globals/BasicWatchFaceView" pc="268437611" symbol="drawWeather"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="19" lineNum="242" parent="globals/BasicWatchFaceView" pc="268437681" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;retrieveHeartrateText&gt;"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="19" lineNum="243" parent="globals/BasicWatchFaceView" pc="268437684" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;retrieveHeartrateText&gt;"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="19" lineNum="245" parent="globals/BasicWatchFaceView" pc="268437697" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;retrieveHeartrateText&gt;"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="19" lineNum="246" parent="globals/BasicWatchFaceView" pc="268437703" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;retrieveHeartrateText&gt;"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="19" lineNum="247" parent="globals/BasicWatchFaceView" pc="268437712" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;retrieveHeartrateText&gt;"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="19" lineNum="248" parent="globals/BasicWatchFaceView" pc="268437718" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;retrieveHeartrateText&gt;"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="19" lineNum="250" parent="globals/BasicWatchFaceView" pc="268437727" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;retrieveHeartrateText&gt;"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="19" lineNum="254" parent="globals/BasicWatchFaceView" pc="268437757" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;retrieveHeartrateText&gt;"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="19" lineNum="256" parent="globals/BasicWatchFaceView" pc="268437774" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;retrieveHeartrateText&gt;"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="19" lineNum="257" parent="globals/BasicWatchFaceView" pc="268437783" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;retrieveHeartrateText&gt;"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="19" lineNum="258" parent="globals/BasicWatchFaceView" pc="268437789" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;retrieveHeartrateText&gt;"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="19" lineNum="260" parent="globals/BasicWatchFaceView" pc="268437798" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;retrieveHeartrateText&gt;"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="19" lineNum="261" parent="globals/BasicWatchFaceView" pc="268437811" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;retrieveHeartrateText&gt;"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="19" lineNum="264" parent="globals/BasicWatchFaceView" pc="268437820" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;retrieveHeartrateText&gt;"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="77" parent="globals/BasicWatchFaceView" pc="268437851" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="78" parent="globals/BasicWatchFaceView" pc="268437853" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="79" parent="globals/BasicWatchFaceView" pc="268437865" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="80" parent="globals/BasicWatchFaceView" pc="268437904" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="81" parent="globals/BasicWatchFaceView" pc="268437943" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="82" parent="globals/BasicWatchFaceView" pc="268437982" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="83" parent="globals/BasicWatchFaceView" pc="268438021" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="84" parent="globals/BasicWatchFaceView" pc="268438060" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="85" parent="globals/BasicWatchFaceView" pc="268438099" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="86" parent="globals/BasicWatchFaceView" pc="268438138" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="87" parent="globals/BasicWatchFaceView" pc="268438177" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="88" parent="globals/BasicWatchFaceView" pc="268438216" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="89" parent="globals/BasicWatchFaceView" pc="268438255" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="90" parent="globals/BasicWatchFaceView" pc="268438294" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="91" parent="globals/BasicWatchFaceView" pc="268438333" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="92" parent="globals/BasicWatchFaceView" pc="268438372" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="93" parent="globals/BasicWatchFaceView" pc="268438411" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="94" parent="globals/BasicWatchFaceView" pc="268438450" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="95" parent="globals/BasicWatchFaceView" pc="268438489" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="96" parent="globals/BasicWatchFaceView" pc="268438528" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="97" parent="globals/BasicWatchFaceView" pc="268438567" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="98" parent="globals/BasicWatchFaceView" pc="268438606" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="99" parent="globals/BasicWatchFaceView" pc="268438645" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="100" parent="globals/BasicWatchFaceView" pc="268438684" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="101" parent="globals/BasicWatchFaceView" pc="268438723" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="102" parent="globals/BasicWatchFaceView" pc="268438762" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="103" parent="globals/BasicWatchFaceView" pc="268438801" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="104" parent="globals/BasicWatchFaceView" pc="268438840" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="105" parent="globals/BasicWatchFaceView" pc="268438879" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="106" parent="globals/BasicWatchFaceView" pc="268438918" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="107" parent="globals/BasicWatchFaceView" pc="268438957" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="108" parent="globals/BasicWatchFaceView" pc="268438996" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="109" parent="globals/BasicWatchFaceView" pc="268439035" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="110" parent="globals/BasicWatchFaceView" pc="268439074" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="111" parent="globals/BasicWatchFaceView" pc="268439113" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="112" parent="globals/BasicWatchFaceView" pc="268439152" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="113" parent="globals/BasicWatchFaceView" pc="268439191" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="114" parent="globals/BasicWatchFaceView" pc="268439230" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="115" parent="globals/BasicWatchFaceView" pc="268439269" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="116" parent="globals/BasicWatchFaceView" pc="268439308" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="117" parent="globals/BasicWatchFaceView" pc="268439347" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="118" parent="globals/BasicWatchFaceView" pc="268439386" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="119" parent="globals/BasicWatchFaceView" pc="268439425" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="120" parent="globals/BasicWatchFaceView" pc="268439464" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="121" parent="globals/BasicWatchFaceView" pc="268439503" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="122" parent="globals/BasicWatchFaceView" pc="268439542" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="123" parent="globals/BasicWatchFaceView" pc="268439581" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="124" parent="globals/BasicWatchFaceView" pc="268439620" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="125" parent="globals/BasicWatchFaceView" pc="268439659" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="126" parent="globals/BasicWatchFaceView" pc="268439698" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="127" parent="globals/BasicWatchFaceView" pc="268439737" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="128" parent="globals/BasicWatchFaceView" pc="268439776" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="129" parent="globals/BasicWatchFaceView" pc="268439815" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="130" parent="globals/BasicWatchFaceView" pc="268439854" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="131" parent="globals/BasicWatchFaceView" pc="268439893" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="132" parent="globals/BasicWatchFaceView" pc="268439932" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="133" parent="globals/BasicWatchFaceView" pc="268439971" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="134" parent="globals/BasicWatchFaceView" pc="268440010" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="135" parent="globals/BasicWatchFaceView" pc="268440049" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="136" parent="globals/BasicWatchFaceView" pc="268440088" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="137" parent="globals/BasicWatchFaceView" pc="268440127" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="138" parent="globals/BasicWatchFaceView" pc="268440166" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="139" parent="globals/BasicWatchFaceView" pc="268440205" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="140" parent="globals/BasicWatchFaceView" pc="268440244" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="141" parent="globals/BasicWatchFaceView" pc="268440283" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="142" parent="globals/BasicWatchFaceView" pc="268440322" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="20" lineNum="143" parent="globals/BasicWatchFaceView" pc="268440361" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="21" lineNum="153" parent="globals/BasicWatchFaceView" pc="268440401" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="21" lineNum="154" parent="globals/BasicWatchFaceView" pc="268440403" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="21" lineNum="155" parent="globals/BasicWatchFaceView" pc="268440423" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="21" lineNum="156" parent="globals/BasicWatchFaceView" pc="268440434" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="21" lineNum="157" parent="globals/BasicWatchFaceView" pc="268440445" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="21" lineNum="158" parent="globals/BasicWatchFaceView" pc="268440456" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="21" lineNum="159" parent="globals/BasicWatchFaceView" pc="268440467" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceView.mc" id="21" lineNum="160" parent="globals/BasicWatchFaceView" pc="268440478" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceApp.mc" id="22" lineNum="12" parent="globals/BasicWatchFaceApp" pc="268440490" symbol="onStart"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceApp.mc" id="23" lineNum="20" parent="globals/BasicWatchFaceApp" pc="268440493" symbol="getInitialView"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceApp.mc" id="23" lineNum="21" parent="globals/BasicWatchFaceApp" pc="268440495" symbol="getInitialView"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceApp.mc" id="24" lineNum="7" parent="globals/BasicWatchFaceApp" pc="268440525" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceApp.mc" id="24" lineNum="8" parent="globals/BasicWatchFaceApp" pc="268440527" symbol="initialize"/>
+<entry filename="C:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\source\\BasicWatchFaceApp.mc" id="25" lineNum="16" parent="globals/BasicWatchFaceApp" pc="268440540" symbol="onStop"/>
+<entry filename="c:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\bin\\gen\\006-B4314-00\\source\\Rez.mcgen" id="26" lineNum="81" parent="globals/Rez/Layouts" pc="268440543" symbol="WatchFace"/>
+<entry filename="c:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\bin\\gen\\006-B4314-00\\source\\Rez.mcgen" id="26" lineNum="82" parent="globals/Rez/Layouts" pc="268440554" symbol="WatchFace"/>
+<entry filename="c:\\Users\\Andreas\\OneDrive\\Dokumente\\Saffron Casa\\Garmin\\connect IQ\\BasicWatchFace\\bin\\gen\\006-B4314-00\\source\\Rez.mcgen" id="26" lineNum="84" parent="globals/Rez/Layouts" pc="268440658" symbol="WatchFace"/>
+</pcToLineNum>
+<symbolTable>
+<entry field="true" id="81" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;unknownWeather&gt;"/>
+<entry field="true" id="68" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;scatteredThunderstormsWeather&gt;"/>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry field="true" id="140" symbol="thinClouds52"/>
+<entry field="true" id="34" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;dustWeather&gt;"/>
+<entry field="true" id="9" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;battery0&gt;"/>
+<entry field="true" id="71" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;smokeWeather&gt;"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry id="28" method="true" symbol="drawDate"/>
+<entry id="32" method="true" symbol="drawWeather"/>
+<entry field="true" id="52" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;iceWeather&gt;"/>
+<entry field="true" id="66" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;sandstormWeather&gt;"/>
+<entry field="true" id="87" symbol="battery0"/>
+<entry field="true" id="97" symbol="clear00"/>
+<entry field="true" id="44" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;hazyWeather&gt;"/>
+<entry field="true" id="138" symbol="snow04"/>
+<entry field="true" id="117" symbol="hurricane41"/>
+<entry field="true" id="126" symbol="mostlyCloudy02"/>
+<entry field="true" id="120" symbol="lightRain14"/>
+<entry id="41" method="true" symbol="getWeatherIcon"/>
+<entry field="true" id="139" symbol="squall36"/>
+<entry field="true" id="17" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;chanceOfSnowWeather&gt;"/>
+<entry field="true" id="50" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;hurricaneWeather&gt;"/>
+<entry field="true" id="11" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;battery20&gt;"/>
+<entry id="8388924" module="true" symbol="Gregorian"/>
+<entry field="true" id="101" symbol="cloudyChanceOfSnow46"/>
+<entry field="true" id="127" symbol="partlyClear22"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry field="true" id="104" symbol="fair40"/>
+<entry field="true" id="122" symbol="lightShowers24"/>
+<entry field="true" id="133" symbol="scatteredShowers11"/>
+<entry field="true" id="132" symbol="sandstorm37"/>
+<entry field="true" id="54" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;lightRainWeather&gt;"/>
+<entry field="true" id="136" symbol="sleet50"/>
+<entry field="true" id="14" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;battery80&gt;"/>
+<entry field="true" id="60" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;partlyClearWeather&gt;"/>
+<entry field="true" id="108" symbol="freezingRain49"/>
+<entry id="31" method="true" symbol="drawTime"/>
+<entry field="true" id="109" symbol="hail10"/>
+<entry field="true" id="152" symbol="AppName"/>
+<entry field="true" id="93" symbol="chanceOfRainSnow44"/>
+<entry id="6" module="true" symbol="globals/Rez/Strings"/>
+<entry id="64" method="true" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;retrieveHeartrateText&gt;"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry id="29" method="true" symbol="drawHR"/>
+<entry field="true" id="131" symbol="sand35"/>
+<entry field="true" id="84" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;wintryMixWeather&gt;"/>
+<entry field="true" id="148" symbol="wintryMix07"/>
+<entry field="true" id="56" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;lightSnowWeather&gt;"/>
+<entry field="true" id="19" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;charging&gt;"/>
+<entry field="true" id="142" symbol="tornado32"/>
+<entry field="true" id="80" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;unknownPrecipitationWeather&gt;"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry field="true" id="73" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;squallWeather&gt;"/>
+<entry field="true" id="114" symbol="heavyRainSnow19"/>
+<entry field="true" id="35" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;fairWeather&gt;"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry field="true" id="96" symbol="chanceOfThunderstorms28"/>
+<entry field="true" id="77" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;timeFont&gt;"/>
+<entry field="true" id="62" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;rainSnowWeather&gt;"/>
+<entry field="true" id="112" symbol="heart"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+<entry field="true" id="8389065" symbol="locY"/>
+<entry field="true" id="8389064" symbol="locX"/>
+<entry field="true" id="37" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;fogWeather&gt;"/>
+<entry field="true" id="69" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;showersWeather&gt;"/>
+<entry field="true" id="105" symbol="flurries48"/>
+<entry id="8391489" module="true" symbol="Weather"/>
+<entry id="30" method="true" symbol="drawSteps"/>
+<entry field="true" id="25" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;dataFont&gt;"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="8389348" symbol="font"/>
+<entry field="true" id="151" symbol="TimeFont"/>
+<entry field="true" id="145" symbol="unknownPrecipitation13"/>
+<entry field="true" id="125" symbol="mostlyClear23"/>
+<entry field="true" id="43" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;hazeWeather&gt;"/>
+<entry id="8389275" method="true" symbol="getApp"/>
+<entry field="true" id="107" symbol="footsteps"/>
+<entry id="5" module="true" symbol="globals/Rez/Layouts"/>
+<entry field="true" id="118" symbol="ice34"/>
+<entry id="27" method="true" symbol="drawBattery"/>
+<entry field="true" id="129" symbol="rain03"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry field="true" id="141" symbol="thunderstorms06"/>
+<entry id="8389376" method="true" symbol="onEnterSleep"/>
+<entry field="true" id="8389063" symbol="identifier"/>
+<entry id="8389349" symbol="justification"/>
+<entry field="true" id="65" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;sandWeather&gt;"/>
+<entry field="true" id="10" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;battery100&gt;"/>
+<entry field="true" id="24" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;cloudyWeather&gt;"/>
+<entry field="true" id="46" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;heavyRainSnowWeather&gt;"/>
+<entry field="true" id="76" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;thunderstormsWeather&gt;"/>
+<entry field="true" id="146" symbol="volcanicAsh38"/>
+<entry field="true" id="99" symbol="cloudyChanceOfRain45"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry field="true" id="124" symbol="mist29"/>
+<entry field="true" id="13" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;battery60&gt;"/>
+<entry field="true" id="103" symbol="dust30"/>
+<entry field="true" id="16" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;chanceOfShowersWeather&gt;"/>
+<entry field="true" id="150" symbol="DateFont"/>
+<entry field="true" id="94" symbol="chanceOfShowers27"/>
+<entry field="true" id="26" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;dateFont&gt;"/>
+<entry field="true" id="83" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;windyWeather&gt;"/>
+<entry field="true" id="18" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;chanceOfThunderstormsWeather&gt;"/>
+<entry id="8389377" method="true" symbol="onExitSleep"/>
+<entry id="8388644" module="true" symbol="System"/>
+<entry field="true" id="121" symbol="lightRainSnow18"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry field="true" id="143" symbol="tropicalStorm42"/>
+<entry field="true" id="38" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;freezingRainWeather&gt;"/>
+<entry field="true" id="59" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;mostlyCloudyWeather&gt;"/>
+<entry field="true" id="36" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;flurriesWeather&gt;"/>
+<entry field="true" id="137" symbol="smoke33"/>
+<entry field="true" id="67" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;scatteredShowersWeather&gt;"/>
+<entry field="true" id="21" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;cloudyChanceOfRainSnowWeather&gt;"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry id="8" object="true" symbol="BasicWatchFaceView"/>
+<entry field="true" id="116" symbol="heavySnow17"/>
+<entry id="40" method="true" symbol="getMonthName"/>
+<entry field="true" id="74" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;stepsIcon&gt;"/>
+<entry field="true" id="86" symbol="LauncherIcon"/>
+<entry field="true" id="70" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;sleetWeather&gt;"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry field="true" id="78" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;tornadoWeather&gt;"/>
+<entry field="true" id="22" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;cloudyChanceOfRainWeather&gt;"/>
+<entry field="true" id="55" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;lightShowersWeather&gt;"/>
+<entry field="true" id="15" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;chanceOfRainSnowWeather&gt;"/>
+<entry field="true" id="98" symbol="cloudy20"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="39" method="true" symbol="getDayName"/>
+<entry field="true" id="33" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;drizzleWeather&gt;"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry field="true" id="20" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;clearWeather&gt;"/>
+<entry field="true" id="53" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;lightRainSnowWeather&gt;"/>
+<entry field="true" id="82" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;volcanicAshWeather&gt;"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry field="true" id="79" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;tropicalStormWeather&gt;"/>
+<entry field="true" id="111" symbol="hazy09"/>
+<entry field="true" id="23" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;cloudyChanceOfSnowWeather&gt;"/>
+<entry field="true" id="51" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;iceSnowWeather&gt;"/>
+<entry field="true" id="113" symbol="heavyRain15"/>
+<entry field="true" id="123" symbol="lightSnow16"/>
+<entry field="true" id="63" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;rainWeather&gt;"/>
+<entry field="true" id="130" symbol="rainSnow21"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry field="true" id="102" symbol="drizzle31"/>
+<entry field="true" id="57" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;mistWeather&gt;"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry id="8389347" symbol="color"/>
+<entry field="true" id="88" symbol="battery100"/>
+<entry id="7" object="true" symbol="BasicWatchFaceApp"/>
+<entry field="true" id="47" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;heavyRainWeather&gt;"/>
+<entry field="true" id="45" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;heartIcon&gt;"/>
+<entry field="true" id="134" symbol="scatteredThunderstorms12"/>
+<entry field="true" id="61" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;partlyCloudyWeather&gt;"/>
+<entry field="true" id="12" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;battery40&gt;"/>
+<entry field="true" id="72" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;snowWeather&gt;"/>
+<entry field="true" id="48" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;heavyShowersWeather&gt;"/>
+<entry id="85" module="true" symbol="Layouts"/>
+<entry field="true" id="110" symbol="haze39"/>
+<entry field="true" id="100" symbol="cloudyChanceOfRainSnow47"/>
+<entry field="true" id="58" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;mostlyClearWeather&gt;"/>
+<entry field="true" id="95" symbol="chanceOfSnow43"/>
+<entry field="true" id="149" symbol="DataFont"/>
+<entry field="true" id="49" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;heavySnowWeather&gt;"/>
+<entry id="4" module="true" symbol="globals/Rez/Fonts"/>
+<entry field="true" id="75" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;thinCloudsWeather&gt;"/>
+<entry field="true" id="147" symbol="windy05"/>
+<entry field="true" id="106" symbol="fog08"/>
+<entry field="true" id="128" symbol="partlyCloudy01"/>
+<entry field="true" id="42" symbol="&lt;globals/BasicWatchFaceView/&lt;&gt;hailWeather&gt;"/>
+<entry field="true" id="92" symbol="battery80"/>
+<entry field="true" id="115" symbol="heavyShowers26"/>
+<entry field="true" id="144" symbol="unknown53"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry field="true" id="91" symbol="battery60"/>
+<entry field="true" id="90" symbol="battery40"/>
+<entry field="true" id="119" symbol="iceSnow51"/>
+<entry id="8388635" module="true" symbol="Application"/>
+<entry field="true" id="89" symbol="battery20"/>
+<entry field="true" id="135" symbol="showers25"/>
+</symbolTable>
+<localVars>
+<entry arg="true" endPc="268435569" name="dayNumber" stackId="1" startPc="268435525"/>
+<entry endPc="268435568" name="days" stackId="2" startPc="268435528"/>
+<entry arg="true" endPc="268435614" name="monthNumber" stackId="1" startPc="268435570"/>
+<entry endPc="268435613" name="months" stackId="2" startPc="268435573"/>
+<entry arg="true" endPc="268435764" name="dc" stackId="1" startPc="268435615"/>
+<entry endPc="268435763" name="timeFormat" stackId="2" startPc="268435618"/>
+<entry endPc="268435763" name="clockTime" stackId="3" startPc="268435618"/>
+<entry endPc="268435763" name="hours" stackId="4" startPc="268435618"/>
+<entry endPc="268435763" name="timeString" stackId="5" startPc="268435618"/>
+<entry arg="true" endPc="268435800" name="dc" stackId="1" startPc="268435765"/>
+<entry arg="true" endPc="268436001" name="dc" stackId="1" startPc="268435801"/>
+<entry endPc="268436000" name="textHeight" stackId="2" startPc="268435804"/>
+<entry endPc="268436000" name="myStats" stackId="3" startPc="268435804"/>
+<entry endPc="268436000" name="batteryLevel" stackId="4" startPc="268435804"/>
+<entry endPc="268436000" name="isCharging" stackId="5" startPc="268435804"/>
+<entry endPc="268436000" name="batteryIcon" stackId="6" startPc="268435804"/>
+<entry arg="true" endPc="268437203" name="cond" stackId="1" startPc="268436002"/>
+<entry arg="true" endPc="268437334" name="dc" stackId="1" startPc="268437204"/>
+<entry endPc="268437333" name="now" stackId="2" startPc="268437207"/>
+<entry endPc="268437333" name="date" stackId="3" startPc="268437207"/>
+<entry endPc="268437333" name="dateString" stackId="4" startPc="268437207"/>
+<entry arg="true" endPc="268437462" name="dc" stackId="1" startPc="268437335"/>
+<entry endPc="268437461" name="stepCount" stackId="2" startPc="268437338"/>
+<entry endPc="268437461" name="dataWidth" stackId="3" startPc="268437338"/>
+<entry endPc="268437461" name="x" stackId="4" startPc="268437338"/>
+<entry arg="true" endPc="268437558" name="dc" stackId="1" startPc="268437463"/>
+<entry endPc="268437557" name="heartRate" stackId="2" startPc="268437466"/>
+<entry endPc="268437557" name="dataWidth" stackId="3" startPc="268437466"/>
+<entry endPc="268437557" name="x" stackId="4" startPc="268437466"/>
+<entry arg="true" endPc="268437680" name="dc" stackId="1" startPc="268437559"/>
+<entry endPc="268437679" name="weatherCond" stackId="2" startPc="268437562"/>
+<entry endPc="268437679" name="weatherIcon" stackId="3" startPc="268437562"/>
+<entry endPc="268437850" name="info" stackId="1" startPc="268437684"/>
+<entry endPc="268437753" name="hr" stackId="2" startPc="268437703"/>
+<entry endPc="268437850" name="hrIterator" stackId="3" startPc="268437684"/>
+<entry endPc="268437850" name="sample" stackId="4" startPc="268437684"/>
+<entry arg="true" endPc="268440489" name="dc" stackId="1" startPc="268440401"/>
+<entry arg="true" endPc="268440667" name="dc" stackId="1" startPc="268440543"/>
+<entry endPc="268440667" name="rez_cmp_local_text_TimeLabel" stackId="2" startPc="268440554"/>
+</localVars>
+<deviceInfo deviceVersion="4866e5192c0c99025597cd8e6e841f3d774b64f7" partNumber="006-B4314-00"/>
+<annotations>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="heavySnow17"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="fog08"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="mist29"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="lightShowers24"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="hail10"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="hurricane41"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="cloudyChanceOfRain45"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="lightSnow16"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="partlyClear22"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="sleet50"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="thunderstorms06"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="hazy09"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="windy05"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="battery80"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="squall36"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="battery40"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="chanceOfThunderstorms28"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="battery100"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="flurries48"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="heart"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="iceSnow51"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="DateFont"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="footsteps"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="showers25"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="cloudyChanceOfSnow46"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="TimeFont"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="smoke33"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="rainSnow21"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="lightRain14"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="drizzle31"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="cloudyChanceOfRainSnow47"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="battery0"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="heavyRain15"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="ice34"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="mostlyCloudy02"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="scatteredShowers11"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="haze39"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="heavyShowers26"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="chanceOfSnow43"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="unknown53"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="dust30"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="scatteredThunderstorms12"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="clear00"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="thinClouds52"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="cloudy20"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="snow04"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="battery20"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="tornado32"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="mostlyClear23"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="volcanicAsh38"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="sand35"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="heavyRainSnow19"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="tropicalStorm42"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="battery60"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="freezingRain49"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="lightRainSnow18"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="chanceOfRainSnow44"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="chanceOfShowers27"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="partlyCloudy01"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="sandstorm37"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="DataFont"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="unknownPrecipitation13"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="fair40"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="rain03"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="wintryMix07"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="67" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/BasicWatchFaceView" offset="134" parentId="globals" symbolId="BasicWatchFaceView" type="class"/>
+<dataEntry label="globals/Rez" offset="916" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/BasicWatchFaceApp" offset="978" parentId="globals" symbolId="BasicWatchFaceApp" type="class"/>
+<dataEntry label="globals/Rez/Drawables" offset="1049" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="1642" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/Fonts" offset="1677" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="1730" parentId="Rez" symbolId="Strings" type="module"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268435480" name="getApp" startPc="268435460">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435492" name="&lt;init&gt;" parent="BasicWatchFaceView" startPc="268435481">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435512" name="&lt;init&gt;" parent="Rez" startPc="268435493">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435524" name="&lt;init&gt;" parent="BasicWatchFaceApp" startPc="268435513">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435569" name="getDayName" parent="BasicWatchFaceView" startPc="268435525">
+<param id="dayNumber"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435614" name="getMonthName" parent="BasicWatchFaceView" startPc="268435570">
+<param id="monthNumber"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435764" name="drawTime" parent="BasicWatchFaceView" startPc="268435615">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435800" name="onLayout" parent="BasicWatchFaceView" startPc="268435765">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436001" name="drawBattery" parent="BasicWatchFaceView" startPc="268435801">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onEnterSleep" parent="BasicWatchFaceView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437203" name="getWeatherIcon" parent="BasicWatchFaceView" startPc="268436002">
+<param id="cond"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437334" name="drawDate" parent="BasicWatchFaceView" startPc="268437204">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437462" name="drawSteps" parent="BasicWatchFaceView" startPc="268437335">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437558" name="drawHR" parent="BasicWatchFaceView" startPc="268437463">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437680" name="drawWeather" parent="BasicWatchFaceView" startPc="268437559">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onHide" parent="BasicWatchFaceView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onExitSleep" parent="BasicWatchFaceView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onShow" parent="BasicWatchFaceView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="private" endPc="268437850" name="&lt;globals/BasicWatchFaceView/&lt;&gt;retrieveHeartrateText&gt;" parent="BasicWatchFaceView" startPc="268437681">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440400" name="initialize" parent="BasicWatchFaceView" startPc="268437851">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440489" name="onUpdate" parent="BasicWatchFaceView" startPc="268440401">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440492" name="onStart" parent="BasicWatchFaceApp" startPc="268440490">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440524" name="getInitialView" parent="BasicWatchFaceApp" startPc="268440493">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440539" name="initialize" parent="BasicWatchFaceApp" startPc="268440525">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440542" name="onStop" parent="BasicWatchFaceApp" startPc="268440540">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440667" name="WatchFace" parent="Layouts" startPc="268440543">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>

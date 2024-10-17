@@ -1,0 +1,2116 @@
+[ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 3; ]
+import Toybox.System;
+[ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 4; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 5; ]
+import Toybox.Time.Gregorian;
+[ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 6; ]
+import Toybox.Weather;
+[ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 8; ]
+class BasicWatchFaceView extends WatchUi.WatchFace{
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 8; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 8; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 9; @position = 16; ]
+    private
+    var timeFont;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 10; @position = 16; ]
+    private
+    var dataFont;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 11; @position = 16; ]
+    private
+    var stepsIcon;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 12; @position = 16; ]
+    private
+    var heartIcon;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 13; @position = 16; ]
+    private
+    var battery100;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 14; @position = 16; ]
+    private
+    var battery80;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 15; @position = 16; ]
+    private
+    var battery60;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 16; @position = 16; ]
+    private
+    var battery40;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 17; @position = 16; ]
+    private
+    var battery20;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 18; @position = 16; ]
+    private
+    var battery0;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 19; @position = 16; ]
+    private
+    var charging;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 20; @position = 16; ]
+    private
+    var dateFont;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 21; @position = 16; ]
+    private
+    var clearWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 22; @position = 16; ]
+    private
+    var partlyCloudyWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 23; @position = 16; ]
+    private
+    var mostlyCloudyWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 24; @position = 16; ]
+    private
+    var rainWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 25; @position = 16; ]
+    private
+    var snowWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 26; @position = 16; ]
+    private
+    var windyWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 27; @position = 16; ]
+    private
+    var thunderstormsWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 28; @position = 16; ]
+    private
+    var wintryMixWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 29; @position = 16; ]
+    private
+    var fogWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 30; @position = 16; ]
+    private
+    var hazyWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 31; @position = 16; ]
+    private
+    var hailWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 32; @position = 16; ]
+    private
+    var scatteredShowersWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 33; @position = 16; ]
+    private
+    var scatteredThunderstormsWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 34; @position = 16; ]
+    private
+    var unknownPrecipitationWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 35; @position = 16; ]
+    private
+    var lightRainWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 36; @position = 16; ]
+    private
+    var heavyRainWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 37; @position = 16; ]
+    private
+    var lightSnowWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 38; @position = 16; ]
+    private
+    var heavySnowWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 39; @position = 16; ]
+    private
+    var lightRainSnowWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 40; @position = 16; ]
+    private
+    var heavyRainSnowWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 41; @position = 16; ]
+    private
+    var cloudyWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 42; @position = 16; ]
+    private
+    var rainSnowWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 43; @position = 16; ]
+    private
+    var partlyClearWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 44; @position = 16; ]
+    private
+    var mostlyClearWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 45; @position = 16; ]
+    private
+    var lightShowersWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 46; @position = 16; ]
+    private
+    var showersWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 47; @position = 16; ]
+    private
+    var heavyShowersWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 48; @position = 16; ]
+    private
+    var chanceOfShowersWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 49; @position = 16; ]
+    private
+    var chanceOfThunderstormsWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 50; @position = 16; ]
+    private
+    var mistWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 51; @position = 16; ]
+    private
+    var dustWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 52; @position = 16; ]
+    private
+    var drizzleWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 53; @position = 16; ]
+    private
+    var tornadoWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 54; @position = 16; ]
+    private
+    var smokeWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 55; @position = 16; ]
+    private
+    var iceWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 56; @position = 16; ]
+    private
+    var sandWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 57; @position = 16; ]
+    private
+    var squallWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 58; @position = 16; ]
+    private
+    var sandstormWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 59; @position = 16; ]
+    private
+    var volcanicAshWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 60; @position = 16; ]
+    private
+    var hazeWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 61; @position = 16; ]
+    private
+    var fairWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 62; @position = 16; ]
+    private
+    var hurricaneWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 63; @position = 16; ]
+    private
+    var tropicalStormWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 64; @position = 16; ]
+    private
+    var chanceOfSnowWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 65; @position = 16; ]
+    private
+    var chanceOfRainSnowWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 66; @position = 16; ]
+    private
+    var cloudyChanceOfRainWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 67; @position = 16; ]
+    private
+    var cloudyChanceOfSnowWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 68; @position = 16; ]
+    private
+    var cloudyChanceOfRainSnowWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 69; @position = 16; ]
+    private
+    var flurriesWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 70; @position = 16; ]
+    private
+    var freezingRainWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 71; @position = 16; ]
+    private
+    var sleetWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 72; @position = 16; ]
+    private
+    var iceSnowWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 73; @position = 16; ]
+    private
+    var thinCloudsWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 74; @position = 16; ]
+    private
+    var unknownWeather;
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 77; ]
+    function initialize() as Void {
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_77_26_144_4_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 78 8 ]
+        %tmp.2 = getv ? :WatchFace;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 79 8 ]
+        %tmp.5 = getv ? :Application;
+        %tmp.6 = getv function %tmp.5 :loadResource;
+        %tmp.8 = getv ? :Rez;
+        %tmp.9 = getv %tmp.8 :Fonts;
+        %tmp.10 = getv %tmp.9 :DataFont;
+        %tmp.11 = invoke %tmp.5 %tmp.6(%tmp.10);
+        putv self :dataFont %tmp.11;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 80 8 ]
+        %tmp.13 = getv ? :Application;
+        %tmp.14 = getv function %tmp.13 :loadResource;
+        %tmp.16 = getv ? :Rez;
+        %tmp.17 = getv %tmp.16 :Fonts;
+        %tmp.18 = getv %tmp.17 :TimeFont;
+        %tmp.19 = invoke %tmp.13 %tmp.14(%tmp.18);
+        putv self :timeFont %tmp.19;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 81 8 ]
+        %tmp.21 = getv ? :Application;
+        %tmp.22 = getv function %tmp.21 :loadResource;
+        %tmp.24 = getv ? :Rez;
+        %tmp.25 = getv %tmp.24 :Fonts;
+        %tmp.26 = getv %tmp.25 :DateFont;
+        %tmp.27 = invoke %tmp.21 %tmp.22(%tmp.26);
+        putv self :dateFont %tmp.27;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 82 8 ]
+        %tmp.29 = getv ? :Application;
+        %tmp.30 = getv function %tmp.29 :loadResource;
+        %tmp.32 = getv ? :Rez;
+        %tmp.33 = getv %tmp.32 :Drawables;
+        %tmp.34 = getv %tmp.33 :footsteps;
+        %tmp.35 = invoke %tmp.29 %tmp.30(%tmp.34);
+        putv self :stepsIcon %tmp.35;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 83 8 ]
+        %tmp.37 = getv ? :Application;
+        %tmp.38 = getv function %tmp.37 :loadResource;
+        %tmp.40 = getv ? :Rez;
+        %tmp.41 = getv %tmp.40 :Drawables;
+        %tmp.42 = getv %tmp.41 :heart;
+        %tmp.43 = invoke %tmp.37 %tmp.38(%tmp.42);
+        putv self :heartIcon %tmp.43;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 84 8 ]
+        %tmp.45 = getv ? :Application;
+        %tmp.46 = getv function %tmp.45 :loadResource;
+        %tmp.48 = getv ? :Rez;
+        %tmp.49 = getv %tmp.48 :Drawables;
+        %tmp.50 = getv %tmp.49 :battery100;
+        %tmp.51 = invoke %tmp.45 %tmp.46(%tmp.50);
+        putv self :battery100 %tmp.51;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 85 8 ]
+        %tmp.53 = getv ? :Application;
+        %tmp.54 = getv function %tmp.53 :loadResource;
+        %tmp.56 = getv ? :Rez;
+        %tmp.57 = getv %tmp.56 :Drawables;
+        %tmp.58 = getv %tmp.57 :battery80;
+        %tmp.59 = invoke %tmp.53 %tmp.54(%tmp.58);
+        putv self :battery80 %tmp.59;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 86 8 ]
+        %tmp.61 = getv ? :Application;
+        %tmp.62 = getv function %tmp.61 :loadResource;
+        %tmp.64 = getv ? :Rez;
+        %tmp.65 = getv %tmp.64 :Drawables;
+        %tmp.66 = getv %tmp.65 :battery60;
+        %tmp.67 = invoke %tmp.61 %tmp.62(%tmp.66);
+        putv self :battery60 %tmp.67;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 87 8 ]
+        %tmp.69 = getv ? :Application;
+        %tmp.70 = getv function %tmp.69 :loadResource;
+        %tmp.72 = getv ? :Rez;
+        %tmp.73 = getv %tmp.72 :Drawables;
+        %tmp.74 = getv %tmp.73 :battery40;
+        %tmp.75 = invoke %tmp.69 %tmp.70(%tmp.74);
+        putv self :battery40 %tmp.75;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 88 8 ]
+        %tmp.77 = getv ? :Application;
+        %tmp.78 = getv function %tmp.77 :loadResource;
+        %tmp.80 = getv ? :Rez;
+        %tmp.81 = getv %tmp.80 :Drawables;
+        %tmp.82 = getv %tmp.81 :battery20;
+        %tmp.83 = invoke %tmp.77 %tmp.78(%tmp.82);
+        putv self :battery20 %tmp.83;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 89 8 ]
+        %tmp.85 = getv ? :Application;
+        %tmp.86 = getv function %tmp.85 :loadResource;
+        %tmp.88 = getv ? :Rez;
+        %tmp.89 = getv %tmp.88 :Drawables;
+        %tmp.90 = getv %tmp.89 :battery0;
+        %tmp.91 = invoke %tmp.85 %tmp.86(%tmp.90);
+        putv self :battery0 %tmp.91;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 90 8 ]
+        %tmp.93 = getv ? :Application;
+        %tmp.94 = getv function %tmp.93 :loadResource;
+        %tmp.96 = getv ? :Rez;
+        %tmp.97 = getv %tmp.96 :Drawables;
+        %tmp.98 = getv %tmp.97 :clear00;
+        %tmp.99 = invoke %tmp.93 %tmp.94(%tmp.98);
+        putv self :clearWeather %tmp.99;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 91 8 ]
+        %tmp.101 = getv ? :Application;
+        %tmp.102 = getv function %tmp.101 :loadResource;
+        %tmp.104 = getv ? :Rez;
+        %tmp.105 = getv %tmp.104 :Drawables;
+        %tmp.106 = getv %tmp.105 :partlyCloudy01;
+        %tmp.107 = invoke %tmp.101 %tmp.102(%tmp.106);
+        putv self :partlyCloudyWeather %tmp.107;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 92 8 ]
+        %tmp.109 = getv ? :Application;
+        %tmp.110 = getv function %tmp.109 :loadResource;
+        %tmp.112 = getv ? :Rez;
+        %tmp.113 = getv %tmp.112 :Drawables;
+        %tmp.114 = getv %tmp.113 :mostlyCloudy02;
+        %tmp.115 = invoke %tmp.109 %tmp.110(%tmp.114);
+        putv self :mostlyCloudyWeather %tmp.115;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 93 8 ]
+        %tmp.117 = getv ? :Application;
+        %tmp.118 = getv function %tmp.117 :loadResource;
+        %tmp.120 = getv ? :Rez;
+        %tmp.121 = getv %tmp.120 :Drawables;
+        %tmp.122 = getv %tmp.121 :rain03;
+        %tmp.123 = invoke %tmp.117 %tmp.118(%tmp.122);
+        putv self :rainWeather %tmp.123;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 94 8 ]
+        %tmp.125 = getv ? :Application;
+        %tmp.126 = getv function %tmp.125 :loadResource;
+        %tmp.128 = getv ? :Rez;
+        %tmp.129 = getv %tmp.128 :Drawables;
+        %tmp.130 = getv %tmp.129 :snow04;
+        %tmp.131 = invoke %tmp.125 %tmp.126(%tmp.130);
+        putv self :snowWeather %tmp.131;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 95 8 ]
+        %tmp.133 = getv ? :Application;
+        %tmp.134 = getv function %tmp.133 :loadResource;
+        %tmp.136 = getv ? :Rez;
+        %tmp.137 = getv %tmp.136 :Drawables;
+        %tmp.138 = getv %tmp.137 :windy05;
+        %tmp.139 = invoke %tmp.133 %tmp.134(%tmp.138);
+        putv self :windyWeather %tmp.139;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 96 8 ]
+        %tmp.141 = getv ? :Application;
+        %tmp.142 = getv function %tmp.141 :loadResource;
+        %tmp.144 = getv ? :Rez;
+        %tmp.145 = getv %tmp.144 :Drawables;
+        %tmp.146 = getv %tmp.145 :thunderstorms06;
+        %tmp.147 = invoke %tmp.141 %tmp.142(%tmp.146);
+        putv self :thunderstormsWeather %tmp.147;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 97 8 ]
+        %tmp.149 = getv ? :Application;
+        %tmp.150 = getv function %tmp.149 :loadResource;
+        %tmp.152 = getv ? :Rez;
+        %tmp.153 = getv %tmp.152 :Drawables;
+        %tmp.154 = getv %tmp.153 :wintryMix07;
+        %tmp.155 = invoke %tmp.149 %tmp.150(%tmp.154);
+        putv self :wintryMixWeather %tmp.155;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 98 8 ]
+        %tmp.157 = getv ? :Application;
+        %tmp.158 = getv function %tmp.157 :loadResource;
+        %tmp.160 = getv ? :Rez;
+        %tmp.161 = getv %tmp.160 :Drawables;
+        %tmp.162 = getv %tmp.161 :fog08;
+        %tmp.163 = invoke %tmp.157 %tmp.158(%tmp.162);
+        putv self :fogWeather %tmp.163;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 99 8 ]
+        %tmp.165 = getv ? :Application;
+        %tmp.166 = getv function %tmp.165 :loadResource;
+        %tmp.168 = getv ? :Rez;
+        %tmp.169 = getv %tmp.168 :Drawables;
+        %tmp.170 = getv %tmp.169 :hazy09;
+        %tmp.171 = invoke %tmp.165 %tmp.166(%tmp.170);
+        putv self :hazyWeather %tmp.171;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 100 8 ]
+        %tmp.173 = getv ? :Application;
+        %tmp.174 = getv function %tmp.173 :loadResource;
+        %tmp.176 = getv ? :Rez;
+        %tmp.177 = getv %tmp.176 :Drawables;
+        %tmp.178 = getv %tmp.177 :hail10;
+        %tmp.179 = invoke %tmp.173 %tmp.174(%tmp.178);
+        putv self :hailWeather %tmp.179;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 101 8 ]
+        %tmp.181 = getv ? :Application;
+        %tmp.182 = getv function %tmp.181 :loadResource;
+        %tmp.184 = getv ? :Rez;
+        %tmp.185 = getv %tmp.184 :Drawables;
+        %tmp.186 = getv %tmp.185 :scatteredShowers11;
+        %tmp.187 = invoke %tmp.181 %tmp.182(%tmp.186);
+        putv self :scatteredShowersWeather %tmp.187;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 102 8 ]
+        %tmp.189 = getv ? :Application;
+        %tmp.190 = getv function %tmp.189 :loadResource;
+        %tmp.192 = getv ? :Rez;
+        %tmp.193 = getv %tmp.192 :Drawables;
+        %tmp.194 = getv %tmp.193 :scatteredThunderstorms12;
+        %tmp.195 = invoke %tmp.189 %tmp.190(%tmp.194);
+        putv self :scatteredThunderstormsWeather %tmp.195;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 103 8 ]
+        %tmp.197 = getv ? :Application;
+        %tmp.198 = getv function %tmp.197 :loadResource;
+        %tmp.200 = getv ? :Rez;
+        %tmp.201 = getv %tmp.200 :Drawables;
+        %tmp.202 = getv %tmp.201 :unknownPrecipitation13;
+        %tmp.203 = invoke %tmp.197 %tmp.198(%tmp.202);
+        putv self :unknownPrecipitationWeather %tmp.203;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 104 8 ]
+        %tmp.205 = getv ? :Application;
+        %tmp.206 = getv function %tmp.205 :loadResource;
+        %tmp.208 = getv ? :Rez;
+        %tmp.209 = getv %tmp.208 :Drawables;
+        %tmp.210 = getv %tmp.209 :lightRain14;
+        %tmp.211 = invoke %tmp.205 %tmp.206(%tmp.210);
+        putv self :lightRainWeather %tmp.211;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 105 8 ]
+        %tmp.213 = getv ? :Application;
+        %tmp.214 = getv function %tmp.213 :loadResource;
+        %tmp.216 = getv ? :Rez;
+        %tmp.217 = getv %tmp.216 :Drawables;
+        %tmp.218 = getv %tmp.217 :heavyRain15;
+        %tmp.219 = invoke %tmp.213 %tmp.214(%tmp.218);
+        putv self :heavyRainWeather %tmp.219;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 106 8 ]
+        %tmp.221 = getv ? :Application;
+        %tmp.222 = getv function %tmp.221 :loadResource;
+        %tmp.224 = getv ? :Rez;
+        %tmp.225 = getv %tmp.224 :Drawables;
+        %tmp.226 = getv %tmp.225 :lightSnow16;
+        %tmp.227 = invoke %tmp.221 %tmp.222(%tmp.226);
+        putv self :lightSnowWeather %tmp.227;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 107 8 ]
+        %tmp.229 = getv ? :Application;
+        %tmp.230 = getv function %tmp.229 :loadResource;
+        %tmp.232 = getv ? :Rez;
+        %tmp.233 = getv %tmp.232 :Drawables;
+        %tmp.234 = getv %tmp.233 :heavySnow17;
+        %tmp.235 = invoke %tmp.229 %tmp.230(%tmp.234);
+        putv self :heavySnowWeather %tmp.235;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 108 8 ]
+        %tmp.237 = getv ? :Application;
+        %tmp.238 = getv function %tmp.237 :loadResource;
+        %tmp.240 = getv ? :Rez;
+        %tmp.241 = getv %tmp.240 :Drawables;
+        %tmp.242 = getv %tmp.241 :lightRainSnow18;
+        %tmp.243 = invoke %tmp.237 %tmp.238(%tmp.242);
+        putv self :lightRainSnowWeather %tmp.243;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 109 8 ]
+        %tmp.245 = getv ? :Application;
+        %tmp.246 = getv function %tmp.245 :loadResource;
+        %tmp.248 = getv ? :Rez;
+        %tmp.249 = getv %tmp.248 :Drawables;
+        %tmp.250 = getv %tmp.249 :heavyRainSnow19;
+        %tmp.251 = invoke %tmp.245 %tmp.246(%tmp.250);
+        putv self :heavyRainSnowWeather %tmp.251;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 110 8 ]
+        %tmp.253 = getv ? :Application;
+        %tmp.254 = getv function %tmp.253 :loadResource;
+        %tmp.256 = getv ? :Rez;
+        %tmp.257 = getv %tmp.256 :Drawables;
+        %tmp.258 = getv %tmp.257 :cloudy20;
+        %tmp.259 = invoke %tmp.253 %tmp.254(%tmp.258);
+        putv self :cloudyWeather %tmp.259;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 111 8 ]
+        %tmp.261 = getv ? :Application;
+        %tmp.262 = getv function %tmp.261 :loadResource;
+        %tmp.264 = getv ? :Rez;
+        %tmp.265 = getv %tmp.264 :Drawables;
+        %tmp.266 = getv %tmp.265 :rainSnow21;
+        %tmp.267 = invoke %tmp.261 %tmp.262(%tmp.266);
+        putv self :rainSnowWeather %tmp.267;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 112 8 ]
+        %tmp.269 = getv ? :Application;
+        %tmp.270 = getv function %tmp.269 :loadResource;
+        %tmp.272 = getv ? :Rez;
+        %tmp.273 = getv %tmp.272 :Drawables;
+        %tmp.274 = getv %tmp.273 :partlyClear22;
+        %tmp.275 = invoke %tmp.269 %tmp.270(%tmp.274);
+        putv self :partlyClearWeather %tmp.275;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 113 8 ]
+        %tmp.277 = getv ? :Application;
+        %tmp.278 = getv function %tmp.277 :loadResource;
+        %tmp.280 = getv ? :Rez;
+        %tmp.281 = getv %tmp.280 :Drawables;
+        %tmp.282 = getv %tmp.281 :mostlyClear23;
+        %tmp.283 = invoke %tmp.277 %tmp.278(%tmp.282);
+        putv self :mostlyClearWeather %tmp.283;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 114 8 ]
+        %tmp.285 = getv ? :Application;
+        %tmp.286 = getv function %tmp.285 :loadResource;
+        %tmp.288 = getv ? :Rez;
+        %tmp.289 = getv %tmp.288 :Drawables;
+        %tmp.290 = getv %tmp.289 :lightShowers24;
+        %tmp.291 = invoke %tmp.285 %tmp.286(%tmp.290);
+        putv self :lightShowersWeather %tmp.291;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 115 8 ]
+        %tmp.293 = getv ? :Application;
+        %tmp.294 = getv function %tmp.293 :loadResource;
+        %tmp.296 = getv ? :Rez;
+        %tmp.297 = getv %tmp.296 :Drawables;
+        %tmp.298 = getv %tmp.297 :showers25;
+        %tmp.299 = invoke %tmp.293 %tmp.294(%tmp.298);
+        putv self :showersWeather %tmp.299;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 116 8 ]
+        %tmp.301 = getv ? :Application;
+        %tmp.302 = getv function %tmp.301 :loadResource;
+        %tmp.304 = getv ? :Rez;
+        %tmp.305 = getv %tmp.304 :Drawables;
+        %tmp.306 = getv %tmp.305 :heavyShowers26;
+        %tmp.307 = invoke %tmp.301 %tmp.302(%tmp.306);
+        putv self :heavyShowersWeather %tmp.307;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 117 8 ]
+        %tmp.309 = getv ? :Application;
+        %tmp.310 = getv function %tmp.309 :loadResource;
+        %tmp.312 = getv ? :Rez;
+        %tmp.313 = getv %tmp.312 :Drawables;
+        %tmp.314 = getv %tmp.313 :chanceOfShowers27;
+        %tmp.315 = invoke %tmp.309 %tmp.310(%tmp.314);
+        putv self :chanceOfShowersWeather %tmp.315;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 118 8 ]
+        %tmp.317 = getv ? :Application;
+        %tmp.318 = getv function %tmp.317 :loadResource;
+        %tmp.320 = getv ? :Rez;
+        %tmp.321 = getv %tmp.320 :Drawables;
+        %tmp.322 = getv %tmp.321 :chanceOfThunderstorms28;
+        %tmp.323 = invoke %tmp.317 %tmp.318(%tmp.322);
+        putv self :chanceOfThunderstormsWeather %tmp.323;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 119 8 ]
+        %tmp.325 = getv ? :Application;
+        %tmp.326 = getv function %tmp.325 :loadResource;
+        %tmp.328 = getv ? :Rez;
+        %tmp.329 = getv %tmp.328 :Drawables;
+        %tmp.330 = getv %tmp.329 :mist29;
+        %tmp.331 = invoke %tmp.325 %tmp.326(%tmp.330);
+        putv self :mistWeather %tmp.331;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 120 8 ]
+        %tmp.333 = getv ? :Application;
+        %tmp.334 = getv function %tmp.333 :loadResource;
+        %tmp.336 = getv ? :Rez;
+        %tmp.337 = getv %tmp.336 :Drawables;
+        %tmp.338 = getv %tmp.337 :dust30;
+        %tmp.339 = invoke %tmp.333 %tmp.334(%tmp.338);
+        putv self :dustWeather %tmp.339;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 121 8 ]
+        %tmp.341 = getv ? :Application;
+        %tmp.342 = getv function %tmp.341 :loadResource;
+        %tmp.344 = getv ? :Rez;
+        %tmp.345 = getv %tmp.344 :Drawables;
+        %tmp.346 = getv %tmp.345 :drizzle31;
+        %tmp.347 = invoke %tmp.341 %tmp.342(%tmp.346);
+        putv self :drizzleWeather %tmp.347;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 122 8 ]
+        %tmp.349 = getv ? :Application;
+        %tmp.350 = getv function %tmp.349 :loadResource;
+        %tmp.352 = getv ? :Rez;
+        %tmp.353 = getv %tmp.352 :Drawables;
+        %tmp.354 = getv %tmp.353 :tornado32;
+        %tmp.355 = invoke %tmp.349 %tmp.350(%tmp.354);
+        putv self :tornadoWeather %tmp.355;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 123 8 ]
+        %tmp.357 = getv ? :Application;
+        %tmp.358 = getv function %tmp.357 :loadResource;
+        %tmp.360 = getv ? :Rez;
+        %tmp.361 = getv %tmp.360 :Drawables;
+        %tmp.362 = getv %tmp.361 :smoke33;
+        %tmp.363 = invoke %tmp.357 %tmp.358(%tmp.362);
+        putv self :smokeWeather %tmp.363;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 124 8 ]
+        %tmp.365 = getv ? :Application;
+        %tmp.366 = getv function %tmp.365 :loadResource;
+        %tmp.368 = getv ? :Rez;
+        %tmp.369 = getv %tmp.368 :Drawables;
+        %tmp.370 = getv %tmp.369 :ice34;
+        %tmp.371 = invoke %tmp.365 %tmp.366(%tmp.370);
+        putv self :iceWeather %tmp.371;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 125 8 ]
+        %tmp.373 = getv ? :Application;
+        %tmp.374 = getv function %tmp.373 :loadResource;
+        %tmp.376 = getv ? :Rez;
+        %tmp.377 = getv %tmp.376 :Drawables;
+        %tmp.378 = getv %tmp.377 :sand35;
+        %tmp.379 = invoke %tmp.373 %tmp.374(%tmp.378);
+        putv self :sandWeather %tmp.379;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 126 8 ]
+        %tmp.381 = getv ? :Application;
+        %tmp.382 = getv function %tmp.381 :loadResource;
+        %tmp.384 = getv ? :Rez;
+        %tmp.385 = getv %tmp.384 :Drawables;
+        %tmp.386 = getv %tmp.385 :squall36;
+        %tmp.387 = invoke %tmp.381 %tmp.382(%tmp.386);
+        putv self :squallWeather %tmp.387;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 127 8 ]
+        %tmp.389 = getv ? :Application;
+        %tmp.390 = getv function %tmp.389 :loadResource;
+        %tmp.392 = getv ? :Rez;
+        %tmp.393 = getv %tmp.392 :Drawables;
+        %tmp.394 = getv %tmp.393 :sandstorm37;
+        %tmp.395 = invoke %tmp.389 %tmp.390(%tmp.394);
+        putv self :sandstormWeather %tmp.395;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 128 8 ]
+        %tmp.397 = getv ? :Application;
+        %tmp.398 = getv function %tmp.397 :loadResource;
+        %tmp.400 = getv ? :Rez;
+        %tmp.401 = getv %tmp.400 :Drawables;
+        %tmp.402 = getv %tmp.401 :volcanicAsh38;
+        %tmp.403 = invoke %tmp.397 %tmp.398(%tmp.402);
+        putv self :volcanicAshWeather %tmp.403;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 129 8 ]
+        %tmp.405 = getv ? :Application;
+        %tmp.406 = getv function %tmp.405 :loadResource;
+        %tmp.408 = getv ? :Rez;
+        %tmp.409 = getv %tmp.408 :Drawables;
+        %tmp.410 = getv %tmp.409 :haze39;
+        %tmp.411 = invoke %tmp.405 %tmp.406(%tmp.410);
+        putv self :hazeWeather %tmp.411;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 130 8 ]
+        %tmp.413 = getv ? :Application;
+        %tmp.414 = getv function %tmp.413 :loadResource;
+        %tmp.416 = getv ? :Rez;
+        %tmp.417 = getv %tmp.416 :Drawables;
+        %tmp.418 = getv %tmp.417 :fair40;
+        %tmp.419 = invoke %tmp.413 %tmp.414(%tmp.418);
+        putv self :fairWeather %tmp.419;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 131 8 ]
+        %tmp.421 = getv ? :Application;
+        %tmp.422 = getv function %tmp.421 :loadResource;
+        %tmp.424 = getv ? :Rez;
+        %tmp.425 = getv %tmp.424 :Drawables;
+        %tmp.426 = getv %tmp.425 :hurricane41;
+        %tmp.427 = invoke %tmp.421 %tmp.422(%tmp.426);
+        putv self :hurricaneWeather %tmp.427;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 132 8 ]
+        %tmp.429 = getv ? :Application;
+        %tmp.430 = getv function %tmp.429 :loadResource;
+        %tmp.432 = getv ? :Rez;
+        %tmp.433 = getv %tmp.432 :Drawables;
+        %tmp.434 = getv %tmp.433 :tropicalStorm42;
+        %tmp.435 = invoke %tmp.429 %tmp.430(%tmp.434);
+        putv self :tropicalStormWeather %tmp.435;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 133 8 ]
+        %tmp.437 = getv ? :Application;
+        %tmp.438 = getv function %tmp.437 :loadResource;
+        %tmp.440 = getv ? :Rez;
+        %tmp.441 = getv %tmp.440 :Drawables;
+        %tmp.442 = getv %tmp.441 :chanceOfSnow43;
+        %tmp.443 = invoke %tmp.437 %tmp.438(%tmp.442);
+        putv self :chanceOfSnowWeather %tmp.443;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 134 8 ]
+        %tmp.445 = getv ? :Application;
+        %tmp.446 = getv function %tmp.445 :loadResource;
+        %tmp.448 = getv ? :Rez;
+        %tmp.449 = getv %tmp.448 :Drawables;
+        %tmp.450 = getv %tmp.449 :chanceOfRainSnow44;
+        %tmp.451 = invoke %tmp.445 %tmp.446(%tmp.450);
+        putv self :chanceOfRainSnowWeather %tmp.451;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 135 8 ]
+        %tmp.453 = getv ? :Application;
+        %tmp.454 = getv function %tmp.453 :loadResource;
+        %tmp.456 = getv ? :Rez;
+        %tmp.457 = getv %tmp.456 :Drawables;
+        %tmp.458 = getv %tmp.457 :cloudyChanceOfRain45;
+        %tmp.459 = invoke %tmp.453 %tmp.454(%tmp.458);
+        putv self :cloudyChanceOfRainWeather %tmp.459;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 136 8 ]
+        %tmp.461 = getv ? :Application;
+        %tmp.462 = getv function %tmp.461 :loadResource;
+        %tmp.464 = getv ? :Rez;
+        %tmp.465 = getv %tmp.464 :Drawables;
+        %tmp.466 = getv %tmp.465 :cloudyChanceOfSnow46;
+        %tmp.467 = invoke %tmp.461 %tmp.462(%tmp.466);
+        putv self :cloudyChanceOfSnowWeather %tmp.467;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 137 8 ]
+        %tmp.469 = getv ? :Application;
+        %tmp.470 = getv function %tmp.469 :loadResource;
+        %tmp.472 = getv ? :Rez;
+        %tmp.473 = getv %tmp.472 :Drawables;
+        %tmp.474 = getv %tmp.473 :cloudyChanceOfRainSnow47;
+        %tmp.475 = invoke %tmp.469 %tmp.470(%tmp.474);
+        putv self :cloudyChanceOfRainSnowWeather %tmp.475;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 138 8 ]
+        %tmp.477 = getv ? :Application;
+        %tmp.478 = getv function %tmp.477 :loadResource;
+        %tmp.480 = getv ? :Rez;
+        %tmp.481 = getv %tmp.480 :Drawables;
+        %tmp.482 = getv %tmp.481 :flurries48;
+        %tmp.483 = invoke %tmp.477 %tmp.478(%tmp.482);
+        putv self :flurriesWeather %tmp.483;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 139 8 ]
+        %tmp.485 = getv ? :Application;
+        %tmp.486 = getv function %tmp.485 :loadResource;
+        %tmp.488 = getv ? :Rez;
+        %tmp.489 = getv %tmp.488 :Drawables;
+        %tmp.490 = getv %tmp.489 :freezingRain49;
+        %tmp.491 = invoke %tmp.485 %tmp.486(%tmp.490);
+        putv self :freezingRainWeather %tmp.491;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 140 8 ]
+        %tmp.493 = getv ? :Application;
+        %tmp.494 = getv function %tmp.493 :loadResource;
+        %tmp.496 = getv ? :Rez;
+        %tmp.497 = getv %tmp.496 :Drawables;
+        %tmp.498 = getv %tmp.497 :sleet50;
+        %tmp.499 = invoke %tmp.493 %tmp.494(%tmp.498);
+        putv self :sleetWeather %tmp.499;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 141 8 ]
+        %tmp.501 = getv ? :Application;
+        %tmp.502 = getv function %tmp.501 :loadResource;
+        %tmp.504 = getv ? :Rez;
+        %tmp.505 = getv %tmp.504 :Drawables;
+        %tmp.506 = getv %tmp.505 :iceSnow51;
+        %tmp.507 = invoke %tmp.501 %tmp.502(%tmp.506);
+        putv self :iceSnowWeather %tmp.507;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 142 8 ]
+        %tmp.509 = getv ? :Application;
+        %tmp.510 = getv function %tmp.509 :loadResource;
+        %tmp.512 = getv ? :Rez;
+        %tmp.513 = getv %tmp.512 :Drawables;
+        %tmp.514 = getv %tmp.513 :thinClouds52;
+        %tmp.515 = invoke %tmp.509 %tmp.510(%tmp.514);
+        putv self :thinCloudsWeather %tmp.515;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 143 8 ]
+        %tmp.517 = getv ? :Application;
+        %tmp.518 = getv function %tmp.517 :loadResource;
+        %tmp.520 = getv ? :Rez;
+        %tmp.521 = getv %tmp.520 :Drawables;
+        %tmp.522 = getv %tmp.521 :unknown53;
+        %tmp.523 = invoke %tmp.517 %tmp.518(%tmp.522);
+        putv self :unknownWeather %tmp.523;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_77_26_144_4_stop:
+    }
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 146; ]
+    function onLayout(dc as Dc) as Void {
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_146_40_148_4_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 147 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Layouts;
+        %tmp.6 = getv function %tmp.5 :WatchFace;
+        %tmp.8 = lgetv %dc;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.9);
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_146_40_148_4_stop:
+    }
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 150; ]
+    function onShow() as Void {
+    }
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 153; ]
+    function onUpdate(dc as Dc) as Void {
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_153_40_161_4_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 154 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :onUpdate;
+        %tmp.5 = lgetv %dc;
+        invoke %tmp.2 %tmp.3(%tmp.5);
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 155 8 ]
+        %tmp.6 = self;
+        %tmp.7 = getv function %tmp.6 :drawTime;
+        %tmp.9 = lgetv %dc;
+        invoke %tmp.6 %tmp.7(%tmp.9);
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 156 8 ]
+        %tmp.10 = self;
+        %tmp.11 = getv function %tmp.10 :drawHR;
+        %tmp.13 = lgetv %dc;
+        invoke %tmp.10 %tmp.11(%tmp.13);
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 157 8 ]
+        %tmp.14 = self;
+        %tmp.15 = getv function %tmp.14 :drawSteps;
+        %tmp.17 = lgetv %dc;
+        invoke %tmp.14 %tmp.15(%tmp.17);
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 158 8 ]
+        %tmp.18 = self;
+        %tmp.19 = getv function %tmp.18 :drawDate;
+        %tmp.21 = lgetv %dc;
+        invoke %tmp.18 %tmp.19(%tmp.21);
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 159 8 ]
+        %tmp.22 = self;
+        %tmp.23 = getv function %tmp.22 :drawBattery;
+        %tmp.25 = lgetv %dc;
+        invoke %tmp.22 %tmp.23(%tmp.25);
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 160 8 ]
+        %tmp.26 = self;
+        %tmp.27 = getv function %tmp.26 :drawWeather;
+        %tmp.29 = lgetv %dc;
+        invoke %tmp.26 %tmp.27(%tmp.29);
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_153_40_161_4_stop:
+    }
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 163; ]
+    function drawWeather(dc) {
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_163_29_172_4_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 164 8 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_163_29_172_4_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_163_29_172_4_stop" ]
+        %weatherCond.1 = local;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 165 8 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_163_29_172_4_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_163_29_172_4_stop" ]
+        %weatherIcon.2 = local;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 166 8 ]
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_166_8_171_12_if_stmt:
+        %tmp.1 = getm $.Toybox.Weather;
+        %tmp.2 = getv function %tmp.1 :getCurrentConditions;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = null;
+        %tmp.5 = ne %tmp.3 %tmp.4;
+        bf %tmp.5 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_166_8_171_12_if_end;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_166_8_171_12_if_true:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_167_12_171_12_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 168 16 ]
+        %tmp.6 = getm $.Toybox.Weather;
+        %tmp.7 = getv function %tmp.6 :getCurrentConditions;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = getv %tmp.8 :condition;
+        %tmp.10 = getv function %tmp.9 :toNumber;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        lputv %weatherCond.1 %tmp.11;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 169 16 ]
+        %tmp.12 = self;
+        %tmp.13 = getv function %tmp.12 :getWeatherIcon;
+        %tmp.15 = lgetv %weatherCond.1;
+        %tmp.16 = invoke %tmp.12 %tmp.13(%tmp.15);
+        lputv %weatherIcon.2 %tmp.16;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 170 16 ]
+        %tmp.17 = lgetv %dc;
+        %tmp.18 = getv function %tmp.17 :drawScaledBitmap;
+        %tmp.19 = lgetv %dc;
+        %tmp.20 = getv function %tmp.19 :getWidth;
+        %tmp.21 = invoke %tmp.19 %tmp.20();
+        %tmp.22 = 2;
+        %tmp.23 = div %tmp.21 %tmp.22;
+        %tmp.24 = lgetv %dc;
+        %tmp.25 = getv function %tmp.24 :getWidth;
+        %tmp.26 = invoke %tmp.24 %tmp.25();
+        %tmp.27 = 8;
+        %tmp.28 = div %tmp.26 %tmp.27;
+        %tmp.29 = 2;
+        %tmp.30 = div %tmp.28 %tmp.29;
+        %tmp.31 = sub %tmp.23 %tmp.30;
+        %tmp.32 = lgetv %dc;
+        %tmp.33 = getv function %tmp.32 :getHeight;
+        %tmp.34 = invoke %tmp.32 %tmp.33();
+        %tmp.35 = 4;
+        %tmp.36 = div %tmp.34 %tmp.35;
+        %tmp.37 = lgetv %dc;
+        %tmp.38 = getv function %tmp.37 :getWidth;
+        %tmp.39 = invoke %tmp.37 %tmp.38();
+        %tmp.40 = 8;
+        %tmp.41 = div %tmp.39 %tmp.40;
+        %tmp.42 = lgetv %dc;
+        %tmp.43 = getv function %tmp.42 :getHeight;
+        %tmp.44 = invoke %tmp.42 %tmp.43();
+        %tmp.45 = 8;
+        %tmp.46 = div %tmp.44 %tmp.45;
+        %tmp.48 = lgetv %weatherIcon.2;
+        invoke %tmp.17 %tmp.18(%tmp.31, %tmp.36, %tmp.41, %tmp.46, %tmp.48);
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_167_12_171_12_stop:
+        goto @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_166_8_171_12_if_end;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_166_8_171_12_if_end:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_163_29_172_4_stop:
+    }
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 173; ]
+    function drawBattery(dc) {
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_173_29_200_4_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 174 8 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_173_29_200_4_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_173_29_200_4_stop" ]
+        %textHeight.1 = local;
+        %tmp.1 = lgetv %dc;
+        %tmp.2 = getv function %tmp.1 :getFontHeight;
+        %tmp.4 = getv ? :timeFont;
+        %tmp.5 = invoke %tmp.1 %tmp.2(%tmp.4);
+        lputv %textHeight.1 %tmp.5;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 175 8 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_173_29_200_4_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_173_29_200_4_stop" ]
+        %myStats.2 = local;
+        %tmp.6 = getm $.Toybox.System;
+        %tmp.7 = getv function %tmp.6 :getSystemStats;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        lputv %myStats.2 %tmp.8;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 176 8 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_173_29_200_4_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_173_29_200_4_stop" ]
+        %batteryLevel.3 = local;
+        %tmp.9 = lgetv %myStats.2;
+        %tmp.10 = getv %tmp.9 :battery;
+        lputv %batteryLevel.3 %tmp.10;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 177 8 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_173_29_200_4_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_173_29_200_4_stop" ]
+        %isCharging.4 = local;
+        %tmp.11 = lgetv %myStats.2;
+        %tmp.12 = getv %tmp.11 :charging;
+        lputv %isCharging.4 %tmp.12;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 179 8 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_173_29_200_4_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_173_29_200_4_stop" ]
+        %batteryIcon.5 = local;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 182 8 ]
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_182_8_198_8_if_stmt:
+        %tmp.14 = lgetv %isCharging.4;
+        bf %tmp.14 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_182_8_198_8_if_false;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_182_8_198_8_if_true:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_182_24_184_8_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 183 12 ]
+        %tmp.16 = getv ? :charging;
+        lputv %batteryIcon.5 %tmp.16;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_182_24_184_8_stop:
+        goto @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_182_8_198_8_if_end;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_182_8_198_8_if_false:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_184_15_198_8_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 185 12 ]
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_185_12_197_12_if_stmt:
+        %tmp.18 = lgetv %batteryLevel.3;
+        %tmp.19 = 80;
+        %tmp.20 = gt %tmp.18 %tmp.19;
+        bf %tmp.20 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_185_12_197_12_if_false;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_185_12_197_12_if_true:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_185_35_187_12_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 186 16 ]
+        %tmp.22 = getv ? :battery100;
+        lputv %batteryIcon.5 %tmp.22;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_185_35_187_12_stop:
+        goto @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_185_12_197_12_if_end;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_185_12_197_12_if_false:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 187 19 ]
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_187_19_197_12_if_stmt:
+        %tmp.24 = lgetv %batteryLevel.3;
+        %tmp.25 = 60;
+        %tmp.26 = gt %tmp.24 %tmp.25;
+        bf %tmp.26 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_187_19_197_12_if_false;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_187_19_197_12_if_true:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_187_42_189_12_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 188 16 ]
+        %tmp.28 = getv ? :battery80;
+        lputv %batteryIcon.5 %tmp.28;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_187_42_189_12_stop:
+        goto @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_187_19_197_12_if_end;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_187_19_197_12_if_false:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 189 19 ]
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_189_19_197_12_if_stmt:
+        %tmp.30 = lgetv %batteryLevel.3;
+        %tmp.31 = 40;
+        %tmp.32 = gt %tmp.30 %tmp.31;
+        bf %tmp.32 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_189_19_197_12_if_false;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_189_19_197_12_if_true:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_189_42_191_12_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 190 16 ]
+        %tmp.34 = getv ? :battery60;
+        lputv %batteryIcon.5 %tmp.34;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_189_42_191_12_stop:
+        goto @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_189_19_197_12_if_end;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_189_19_197_12_if_false:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 191 19 ]
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_191_19_197_12_if_stmt:
+        %tmp.36 = lgetv %batteryLevel.3;
+        %tmp.37 = 20;
+        %tmp.38 = gt %tmp.36 %tmp.37;
+        bf %tmp.38 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_191_19_197_12_if_false;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_191_19_197_12_if_true:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_191_42_193_12_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 192 16 ]
+        %tmp.40 = getv ? :battery40;
+        lputv %batteryIcon.5 %tmp.40;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_191_42_193_12_stop:
+        goto @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_191_19_197_12_if_end;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_191_19_197_12_if_false:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 193 19 ]
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_193_19_197_12_if_stmt:
+        %tmp.42 = lgetv %batteryLevel.3;
+        %tmp.43 = 5;
+        %tmp.44 = gt %tmp.42 %tmp.43;
+        bf %tmp.44 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_193_19_197_12_if_false;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_193_19_197_12_if_true:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_193_41_195_12_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 194 16 ]
+        %tmp.46 = getv ? :battery20;
+        lputv %batteryIcon.5 %tmp.46;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_193_41_195_12_stop:
+        goto @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_193_19_197_12_if_end;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_193_19_197_12_if_false:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_195_19_197_12_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 196 16 ]
+        %tmp.48 = getv ? :battery0;
+        lputv %batteryIcon.5 %tmp.48;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_195_19_197_12_stop:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_193_19_197_12_if_end:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_191_19_197_12_if_end:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_189_19_197_12_if_end:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_187_19_197_12_if_end:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_185_12_197_12_if_end:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_184_15_198_8_stop:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_182_8_198_8_if_end:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 199 12 ]
+        %tmp.49 = lgetv %dc;
+        %tmp.50 = getv function %tmp.49 :drawBitmap;
+        %tmp.51 = lgetv %dc;
+        %tmp.52 = getv function %tmp.51 :getWidth;
+        %tmp.53 = invoke %tmp.51 %tmp.52();
+        %tmp.54 = 2;
+        %tmp.55 = div %tmp.53 %tmp.54;
+        %tmp.56 = 25;
+        %tmp.57 = sub %tmp.55 %tmp.56;
+        %tmp.58 = lgetv %dc;
+        %tmp.59 = getv function %tmp.58 :getHeight;
+        %tmp.60 = invoke %tmp.58 %tmp.59();
+        %tmp.61 = 2;
+        %tmp.62 = div %tmp.60 %tmp.61;
+        %tmp.64 = lgetv %textHeight.1;
+        %tmp.65 = 2;
+        %tmp.66 = div %tmp.64 %tmp.65;
+        %tmp.67 = add %tmp.62 %tmp.66;
+        %tmp.69 = lgetv %batteryIcon.5;
+        invoke %tmp.49 %tmp.50(%tmp.57, %tmp.67, %tmp.69);
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_173_29_200_4_stop:
+    }
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 202; ]
+    function drawTime(dc) {
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_202_26_218_4_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 203 8 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_202_26_218_4_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_202_26_218_4_stop" ]
+        %timeFormat.1 = local;
+        %tmp.1 = "$1$:$2$";
+        lputv %timeFormat.1 %tmp.1;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 204 8 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_202_26_218_4_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_202_26_218_4_stop" ]
+        %clockTime.2 = local;
+        %tmp.2 = getm $.Toybox.System;
+        %tmp.3 = getv function %tmp.2 :getClockTime;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %clockTime.2 %tmp.4;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 205 8 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_202_26_218_4_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_202_26_218_4_stop" ]
+        %hours.3 = local;
+        %tmp.5 = lgetv %clockTime.2;
+        %tmp.6 = getv %tmp.5 :hour;
+        lputv %hours.3 %tmp.6;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 206 8 ]
+        %tmp.7 = lgetv %hours.3;
+        %tmp.8 = getv function %tmp.7 :format;
+        %tmp.9 = "%02d";
+        %tmp.10 = invoke %tmp.7 %tmp.8(%tmp.9);
+        lputv %hours.3 %tmp.10;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 207 8 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_202_26_218_4_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_202_26_218_4_stop" ]
+        %timeString.4 = local;
+        %tmp.11 = getm $.Toybox.Lang;
+        %tmp.12 = getv function %tmp.11 :format;
+        %tmp.14 = lgetv %timeFormat.1;
+        %tmp.15 = newa 2;
+        %tmp.17 = lgetv %hours.3;
+        %tmp.18 = dup %tmp.15;
+        %tmp.19 = aputv %tmp.18 0 %tmp.17;
+        %tmp.20 = lgetv %clockTime.2;
+        %tmp.21 = getv %tmp.20 :min;
+        %tmp.22 = getv function %tmp.21 :format;
+        %tmp.23 = "%02d";
+        %tmp.24 = invoke %tmp.21 %tmp.22(%tmp.23);
+        %tmp.25 = dup %tmp.19;
+        %tmp.26 = aputv %tmp.25 1 %tmp.24;
+        %tmp.27 = invoke %tmp.11 %tmp.12(%tmp.14, %tmp.26);
+        lputv %timeString.4 %tmp.27;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 209 8 ]
+        %tmp.28 = lgetv %dc;
+        %tmp.29 = getv function %tmp.28 :setColor;
+        %tmp.30 = getm $.Toybox.Graphics;
+        %tmp.31 = getv %tmp.30 :COLOR_WHITE;
+        %tmp.32 = getm $.Toybox.Graphics;
+        %tmp.33 = getv %tmp.32 :COLOR_TRANSPARENT;
+        invoke %tmp.28 %tmp.29(%tmp.31, %tmp.33);
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 211 8 ]
+        %tmp.34 = lgetv %dc;
+        %tmp.35 = getv function %tmp.34 :drawText;
+        %tmp.36 = lgetv %dc;
+        %tmp.37 = getv function %tmp.36 :getWidth;
+        %tmp.38 = invoke %tmp.36 %tmp.37();
+        %tmp.39 = 2;
+        %tmp.40 = div %tmp.38 %tmp.39;
+        %tmp.41 = lgetv %dc;
+        %tmp.42 = getv function %tmp.41 :getHeight;
+        %tmp.43 = invoke %tmp.41 %tmp.42();
+        %tmp.44 = 2;
+        %tmp.45 = div %tmp.43 %tmp.44;
+        %tmp.47 = getv ? :timeFont;
+        %tmp.49 = lgetv %timeString.4;
+        %tmp.50 = getm $.Toybox.Graphics;
+        %tmp.51 = getv %tmp.50 :TEXT_JUSTIFY_CENTER;
+        %tmp.52 = getm $.Toybox.Graphics;
+        %tmp.53 = getv %tmp.52 :TEXT_JUSTIFY_VCENTER;
+        %tmp.54 = bitor %tmp.51 %tmp.53;
+        invoke %tmp.34 %tmp.35(%tmp.40, %tmp.45, %tmp.47, %tmp.49, %tmp.54);
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_202_26_218_4_stop:
+    }
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 220; ]
+    function drawHR(dc) {
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_220_24_240_4_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 222 8 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_220_24_240_4_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_220_24_240_4_stop" ]
+        %heartRate.1 = local;
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :retrieveHeartrateText;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %heartRate.1 %tmp.3;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 224 8 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_220_24_240_4_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_220_24_240_4_stop" ]
+        %dataWidth.2 = local;
+        %tmp.4 = lgetv %dc;
+        %tmp.5 = getv function %tmp.4 :getTextWidthInPixels;
+        %tmp.7 = lgetv %heartRate.1;
+        %tmp.9 = getv ? :dataFont;
+        %tmp.10 = invoke %tmp.4 %tmp.5(%tmp.7, %tmp.9);
+        %tmp.11 = 40;
+        %tmp.12 = add %tmp.10 %tmp.11;
+        lputv %dataWidth.2 %tmp.12;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 225 8 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_220_24_240_4_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_220_24_240_4_stop" ]
+        %x.3 = local;
+        %tmp.13 = lgetv %dc;
+        %tmp.14 = getv function %tmp.13 :getWidth;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        %tmp.16 = 2;
+        %tmp.17 = div %tmp.15 %tmp.16;
+        %tmp.19 = lgetv %dataWidth.2;
+        %tmp.20 = 2;
+        %tmp.21 = div %tmp.19 %tmp.20;
+        %tmp.22 = sub %tmp.17 %tmp.21;
+        lputv %x.3 %tmp.22;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 227 8 ]
+        %tmp.23 = lgetv %dc;
+        %tmp.24 = getv function %tmp.23 :drawBitmap;
+        %tmp.26 = lgetv %x.3;
+        %tmp.27 = 20;
+        %tmp.29 = getv ? :heartIcon;
+        invoke %tmp.23 %tmp.24(%tmp.26, %tmp.27, %tmp.29);
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 233 8 ]
+        %tmp.30 = lgetv %dc;
+        %tmp.31 = getv function %tmp.30 :drawText;
+        %tmp.33 = lgetv %x.3;
+        %tmp.34 = 40;
+        %tmp.35 = add %tmp.33 %tmp.34;
+        %tmp.36 = 18;
+        %tmp.38 = getv ? :dataFont;
+        %tmp.40 = lgetv %heartRate.1;
+        %tmp.41 = getm $.Toybox.Graphics;
+        %tmp.42 = getv %tmp.41 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.30 %tmp.31(%tmp.35, %tmp.36, %tmp.38, %tmp.40, %tmp.42);
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_220_24_240_4_stop:
+    }
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 242; ]
+    private
+    function retrieveHeartrateText() {
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_242_45_265_4_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 243 8 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_242_45_265_4_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_242_45_265_4_stop" ]
+        %info.1 = local;
+        %tmp.2 = getv ? :Activity;
+        %tmp.3 = getv function %tmp.2 :getActivityInfo;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %info.1 %tmp.4;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 245 8 ]
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_245_8_251_8_if_stmt:
+        %tmp.6 = lgetv %info.1;
+        %tmp.7 = null;
+        %tmp.8 = ne %tmp.6 %tmp.7;
+        bf %tmp.8 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_245_8_251_8_if_end;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_245_8_251_8_if_true:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_245_26_251_8_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 246 12 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_245_26_251_8_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_245_26_251_8_stop" ]
+        %hr.2 = local;
+        %tmp.9 = lgetv %info.1;
+        %tmp.10 = as %tmp.9 { (!Null) };
+        %tmp.11 = getv %tmp.10 :currentHeartRate;
+        lputv %hr.2 %tmp.11;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 247 12 ]
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_247_12_249_12_if_stmt:
+        %tmp.13 = lgetv %hr.2;
+        %tmp.14 = null;
+        %tmp.15 = eq %tmp.13 %tmp.14;
+        bf %tmp.15 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_247_12_249_12_if_end;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_247_12_249_12_if_true:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_247_28_249_12_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 248 12 ]
+        %tmp.16 = "--";
+        ret %tmp.16;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_247_28_249_12_stop:
+        goto @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_247_12_249_12_if_end;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_247_12_249_12_if_end:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 250 12 ]
+        %tmp.17 = getm $.Toybox.Lang;
+        %tmp.18 = getv function %tmp.17 :format;
+        %tmp.19 = "$1$";
+        %tmp.20 = newa 1;
+        %tmp.22 = lgetv %hr.2;
+        %tmp.23 = dup %tmp.20;
+        %tmp.24 = aputv %tmp.23 0 %tmp.22;
+        %tmp.25 = invoke %tmp.17 %tmp.18(%tmp.19, %tmp.24);
+        ret %tmp.25;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_245_26_251_8_stop:
+        goto @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_245_8_251_8_if_end;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_245_8_251_8_if_end:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 254 8 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_242_45_265_4_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_242_45_265_4_stop" ]
+        %hrIterator.3 = local;
+        %tmp.27 = getv ? :ActivityMonitor;
+        %tmp.28 = getv function %tmp.27 :getHeartRateHistory;
+        %tmp.29 = null;
+        %tmp.30 = false;
+        %tmp.31 = invoke %tmp.27 %tmp.28(%tmp.29, %tmp.30);
+        lputv %hrIterator.3 %tmp.31;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 256 8 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_242_45_265_4_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_242_45_265_4_stop" ]
+        %sample.4 = local;
+        %tmp.32 = lgetv %hrIterator.3;
+        %tmp.33 = getv function %tmp.32 :next;
+        %tmp.34 = invoke %tmp.32 %tmp.33();
+        lputv %sample.4 %tmp.34;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 257 8 ]
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_257_8_259_8_if_stmt:
+        %tmp.36 = lgetv %sample.4;
+        %tmp.37 = null;
+        %tmp.38 = eq %tmp.36 %tmp.37;
+        bf %tmp.38 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_257_8_259_8_if_end;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_257_8_259_8_if_true:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_257_28_259_8_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 258 12 ]
+        %tmp.39 = "--";
+        ret %tmp.39;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_257_28_259_8_stop:
+        goto @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_257_8_259_8_if_end;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_257_8_259_8_if_end:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 260 8 ]
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_260_8_262_8_if_stmt:
+        %tmp.40 = lgetv %sample.4;
+        %tmp.41 = getv %tmp.40 :heartRate;
+        %tmp.43 = getv ? :ActivityMonitor;
+        %tmp.44 = getv %tmp.43 :INVALID_HR_SAMPLE;
+        %tmp.45 = eq %tmp.41 %tmp.44;
+        bf %tmp.45 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_260_8_262_8_if_end;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_260_8_262_8_if_true:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_260_67_262_8_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 261 12 ]
+        %tmp.46 = "--";
+        ret %tmp.46;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_260_67_262_8_stop:
+        goto @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_260_8_262_8_if_end;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_260_8_262_8_if_end:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 264 8 ]
+        %tmp.47 = getm $.Toybox.Lang;
+        %tmp.48 = getv function %tmp.47 :format;
+        %tmp.49 = "$1$";
+        %tmp.50 = newa 1;
+        %tmp.51 = lgetv %sample.4;
+        %tmp.52 = getv %tmp.51 :heartRate;
+        %tmp.53 = dup %tmp.50;
+        %tmp.54 = aputv %tmp.53 0 %tmp.52;
+        %tmp.55 = invoke %tmp.47 %tmp.48(%tmp.49, %tmp.54);
+        ret %tmp.55;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_242_45_265_4_stop:
+    }
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 267; ]
+    function drawSteps(dc) {
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_267_27_285_4_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 268 8 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_267_27_285_4_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_267_27_285_4_stop" ]
+        %stepCount.1 = local;
+        %tmp.2 = getv ? :ActivityMonitor;
+        %tmp.3 = getv function %tmp.2 :getInfo;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        %tmp.5 = getv %tmp.4 :steps;
+        %tmp.6 = getv function %tmp.5 :toString;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        lputv %stepCount.1 %tmp.7;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 269 8 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_267_27_285_4_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_267_27_285_4_stop" ]
+        %dataWidth.2 = local;
+        %tmp.8 = lgetv %dc;
+        %tmp.9 = getv function %tmp.8 :getTextWidthInPixels;
+        %tmp.11 = lgetv %stepCount.1;
+        %tmp.13 = getv ? :dataFont;
+        %tmp.14 = invoke %tmp.8 %tmp.9(%tmp.11, %tmp.13);
+        %tmp.15 = 40;
+        %tmp.16 = add %tmp.14 %tmp.15;
+        lputv %dataWidth.2 %tmp.16;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 270 8 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_267_27_285_4_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_267_27_285_4_stop" ]
+        %x.3 = local;
+        %tmp.17 = lgetv %dc;
+        %tmp.18 = getv function %tmp.17 :getWidth;
+        %tmp.19 = invoke %tmp.17 %tmp.18();
+        %tmp.20 = 2;
+        %tmp.21 = div %tmp.19 %tmp.20;
+        %tmp.23 = lgetv %dataWidth.2;
+        %tmp.24 = 2;
+        %tmp.25 = div %tmp.23 %tmp.24;
+        %tmp.26 = sub %tmp.21 %tmp.25;
+        lputv %x.3 %tmp.26;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 272 8 ]
+        %tmp.27 = lgetv %dc;
+        %tmp.28 = getv function %tmp.27 :drawBitmap;
+        %tmp.30 = lgetv %x.3;
+        %tmp.31 = lgetv %dc;
+        %tmp.32 = getv function %tmp.31 :getHeight;
+        %tmp.33 = invoke %tmp.31 %tmp.32();
+        %tmp.34 = 60;
+        %tmp.35 = sub %tmp.33 %tmp.34;
+        %tmp.37 = getv ? :stepsIcon;
+        invoke %tmp.27 %tmp.28(%tmp.30, %tmp.35, %tmp.37);
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 278 8 ]
+        %tmp.38 = lgetv %dc;
+        %tmp.39 = getv function %tmp.38 :drawText;
+        %tmp.41 = lgetv %x.3;
+        %tmp.42 = 40;
+        %tmp.43 = add %tmp.41 %tmp.42;
+        %tmp.44 = lgetv %dc;
+        %tmp.45 = getv function %tmp.44 :getHeight;
+        %tmp.46 = invoke %tmp.44 %tmp.45();
+        %tmp.47 = 60;
+        %tmp.48 = sub %tmp.46 %tmp.47;
+        %tmp.50 = getv ? :dataFont;
+        %tmp.52 = lgetv %stepCount.1;
+        %tmp.53 = getm $.Toybox.Graphics;
+        %tmp.54 = getv %tmp.53 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.38 %tmp.39(%tmp.43, %tmp.48, %tmp.50, %tmp.52, %tmp.54);
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_267_27_285_4_stop:
+    }
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 287; ]
+    function drawDate(dc) {
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_287_26_299_4_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 288 8 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_287_26_299_4_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_287_26_299_4_stop" ]
+        %now.1 = local;
+        %tmp.2 = getv ? :Time;
+        %tmp.3 = getv function %tmp.2 :now;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %now.1 %tmp.4;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 289 8 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_287_26_299_4_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_287_26_299_4_stop" ]
+        %date.2 = local;
+        %tmp.5 = getm $.Toybox.Time.Gregorian;
+        %tmp.6 = getv function %tmp.5 :info;
+        %tmp.8 = lgetv %now.1;
+        %tmp.10 = getv ? :Time;
+        %tmp.11 = getv %tmp.10 :FORMAT_SHORT;
+        %tmp.12 = invoke %tmp.5 %tmp.6(%tmp.8, %tmp.11);
+        lputv %date.2 %tmp.12;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 290 8 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_287_26_299_4_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_287_26_299_4_stop" ]
+        %dateString.3 = local;
+        %tmp.13 = getm $.Toybox.Lang;
+        %tmp.14 = getv function %tmp.13 :format;
+        %tmp.15 = "$1$, $2$ $3$";
+        %tmp.16 = newa 3;
+        %tmp.17 = self;
+        %tmp.18 = getv function %tmp.17 :getDayName;
+        %tmp.19 = lgetv %date.2;
+        %tmp.20 = getv %tmp.19 :day_of_week;
+        %tmp.21 = invoke %tmp.17 %tmp.18(%tmp.20);
+        %tmp.22 = dup %tmp.16;
+        %tmp.23 = aputv %tmp.22 0 %tmp.21;
+        %tmp.24 = self;
+        %tmp.25 = getv function %tmp.24 :getMonthName;
+        %tmp.26 = lgetv %date.2;
+        %tmp.27 = getv %tmp.26 :month;
+        %tmp.28 = invoke %tmp.24 %tmp.25(%tmp.27);
+        %tmp.29 = dup %tmp.23;
+        %tmp.30 = aputv %tmp.29 1 %tmp.28;
+        %tmp.31 = lgetv %date.2;
+        %tmp.32 = getv %tmp.31 :day;
+        %tmp.33 = dup %tmp.30;
+        %tmp.34 = aputv %tmp.33 2 %tmp.32;
+        %tmp.35 = invoke %tmp.13 %tmp.14(%tmp.15, %tmp.34);
+        lputv %dateString.3 %tmp.35;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 292 8 ]
+        %tmp.36 = lgetv %dc;
+        %tmp.37 = getv function %tmp.36 :drawText;
+        %tmp.38 = lgetv %dc;
+        %tmp.39 = getv function %tmp.38 :getWidth;
+        %tmp.40 = invoke %tmp.38 %tmp.39();
+        %tmp.41 = 2;
+        %tmp.42 = div %tmp.40 %tmp.41;
+        %tmp.43 = 60;
+        %tmp.45 = getv ? :dateFont;
+        %tmp.47 = lgetv %dateString.3;
+        %tmp.48 = getm $.Toybox.Graphics;
+        %tmp.49 = getv %tmp.48 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.36 %tmp.37(%tmp.42, %tmp.43, %tmp.45, %tmp.47, %tmp.49);
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_287_26_299_4_stop:
+    }
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 301; ]
+    function getDayName(dayNumber) {
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_301_35_313_4_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 303 8 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_301_35_313_4_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_301_35_313_4_stop" ]
+        %days.1 = local;
+        %tmp.1 = newa 7;
+        %tmp.2 = "Sun";
+        %tmp.3 = dup %tmp.1;
+        %tmp.4 = aputv %tmp.3 0 %tmp.2;
+        %tmp.5 = "Mon";
+        %tmp.6 = dup %tmp.4;
+        %tmp.7 = aputv %tmp.6 1 %tmp.5;
+        %tmp.8 = "Tues";
+        %tmp.9 = dup %tmp.7;
+        %tmp.10 = aputv %tmp.9 2 %tmp.8;
+        %tmp.11 = "Wed";
+        %tmp.12 = dup %tmp.10;
+        %tmp.13 = aputv %tmp.12 3 %tmp.11;
+        %tmp.14 = "Thu";
+        %tmp.15 = dup %tmp.13;
+        %tmp.16 = aputv %tmp.15 4 %tmp.14;
+        %tmp.17 = "Fri";
+        %tmp.18 = dup %tmp.16;
+        %tmp.19 = aputv %tmp.18 5 %tmp.17;
+        %tmp.20 = "Sat";
+        %tmp.21 = dup %tmp.19;
+        %tmp.22 = aputv %tmp.21 6 %tmp.20;
+        lputv %days.1 %tmp.22;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 308 8 ]
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_308_8_312_8_if_stmt:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_308_12_308_43_begin:
+        %tmp.24 = lgetv %dayNumber;
+        %tmp.25 = 1;
+        %tmp.26 = gte %tmp.24 %tmp.25;
+        bf %tmp.26 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_308_8_312_8_if_false;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_308_30_308_43_true:
+        %tmp.28 = lgetv %dayNumber;
+        %tmp.29 = 7;
+        %tmp.30 = lte %tmp.28 %tmp.29;
+        push %tmp.30;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_308_30_308_43_end:
+        %tmp.31 = phi [%tmp.26 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_308_12_308_43_begin] [%tmp.30 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_308_30_308_43_true] [%tmp.31 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_308_30_308_43_end];
+        bf %tmp.31 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_308_8_312_8_if_false;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_308_8_312_8_if_true:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_308_46_310_8_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 309 12 ]
+        %tmp.33 = lgetv %days.1;
+        %tmp.35 = lgetv %dayNumber;
+        %tmp.36 = 1;
+        %tmp.37 = sub %tmp.35 %tmp.36;
+        %tmp.38 = agetv %tmp.33 %tmp.37;
+        ret %tmp.38;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_308_46_310_8_stop:
+        goto @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_308_8_312_8_if_end;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_308_8_312_8_if_false:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_310_15_312_8_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 311 12 ]
+        %tmp.39 = "Invalid Day";
+        ret %tmp.39;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_310_15_312_8_stop:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_308_8_312_8_if_end:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_301_35_313_4_stop:
+    }
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 315; ]
+    function getMonthName(monthNumber) {
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_315_39_329_4_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 317 8 ]
+        [ "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_315_39_329_4_start" "C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_315_39_329_4_stop" ]
+        %months.1 = local;
+        %tmp.1 = newa 12;
+        %tmp.2 = "Jan";
+        %tmp.3 = dup %tmp.1;
+        %tmp.4 = aputv %tmp.3 0 %tmp.2;
+        %tmp.5 = "Feb";
+        %tmp.6 = dup %tmp.4;
+        %tmp.7 = aputv %tmp.6 1 %tmp.5;
+        %tmp.8 = "Mar";
+        %tmp.9 = dup %tmp.7;
+        %tmp.10 = aputv %tmp.9 2 %tmp.8;
+        %tmp.11 = "Apr";
+        %tmp.12 = dup %tmp.10;
+        %tmp.13 = aputv %tmp.12 3 %tmp.11;
+        %tmp.14 = "May";
+        %tmp.15 = dup %tmp.13;
+        %tmp.16 = aputv %tmp.15 4 %tmp.14;
+        %tmp.17 = "Jun";
+        %tmp.18 = dup %tmp.16;
+        %tmp.19 = aputv %tmp.18 5 %tmp.17;
+        %tmp.20 = "Jul";
+        %tmp.21 = dup %tmp.19;
+        %tmp.22 = aputv %tmp.21 6 %tmp.20;
+        %tmp.23 = "Aug";
+        %tmp.24 = dup %tmp.22;
+        %tmp.25 = aputv %tmp.24 7 %tmp.23;
+        %tmp.26 = "Sep";
+        %tmp.27 = dup %tmp.25;
+        %tmp.28 = aputv %tmp.27 8 %tmp.26;
+        %tmp.29 = "Oct";
+        %tmp.30 = dup %tmp.28;
+        %tmp.31 = aputv %tmp.30 9 %tmp.29;
+        %tmp.32 = "Nov";
+        %tmp.33 = dup %tmp.31;
+        %tmp.34 = aputv %tmp.33 10 %tmp.32;
+        %tmp.35 = "Dec";
+        %tmp.36 = dup %tmp.34;
+        %tmp.37 = aputv %tmp.36 11 %tmp.35;
+        lputv %months.1 %tmp.37;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 324 8 ]
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_324_8_328_8_if_stmt:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_324_12_324_47_begin:
+        %tmp.39 = lgetv %monthNumber;
+        %tmp.40 = 1;
+        %tmp.41 = gte %tmp.39 %tmp.40;
+        bf %tmp.41 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_324_8_328_8_if_false;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_324_32_324_47_true:
+        %tmp.43 = lgetv %monthNumber;
+        %tmp.44 = 12;
+        %tmp.45 = lte %tmp.43 %tmp.44;
+        push %tmp.45;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_324_32_324_47_end:
+        %tmp.46 = phi [%tmp.41 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_324_12_324_47_begin] [%tmp.45 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_324_32_324_47_true] [%tmp.46 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_324_32_324_47_end];
+        bf %tmp.46 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_324_8_328_8_if_false;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_324_8_328_8_if_true:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_324_51_326_8_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 325 12 ]
+        %tmp.48 = lgetv %months.1;
+        %tmp.50 = lgetv %monthNumber;
+        %tmp.51 = 1;
+        %tmp.52 = sub %tmp.50 %tmp.51;
+        %tmp.53 = agetv %tmp.48 %tmp.52;
+        ret %tmp.53;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_324_51_326_8_stop:
+        goto @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_324_8_328_8_if_end;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_324_8_328_8_if_false:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_326_15_328_8_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 327 12 ]
+        %tmp.54 = "Invalid Month";
+        ret %tmp.54;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_326_15_328_8_stop:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_324_8_328_8_if_end:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_315_39_329_4_stop:
+    }
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 330; ]
+    function onHide() as Void {
+    }
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 333; ]
+    function onExitSleep() as Void {
+    }
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 336; ]
+    function onEnterSleep() as Void {
+    }
+    [ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 339; ]
+    function getWeatherIcon(cond) {
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_339_34_452_4_start:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 340 8 ]
+        %tmp.2 = lgetv %cond;
+        push %tmp.2;
+        switch %tmp.2 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_340_8_451_8_switchStmtEnd;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_340_8_451_8_switchStmtBegin:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 341 12 ]
+        %tmp.3 = dup %tmp.2;
+        %tmp.4 = 0;
+        %tmp.5 = getv function %tmp.3 :equals;
+        %tmp.6 = invoke %tmp.3 %tmp.5 (%tmp.4);
+        bt %tmp.6 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_341_12_342_35_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 343 12 ]
+        %tmp.7 = dup %tmp.2;
+        %tmp.8 = 1;
+        %tmp.9 = getv function %tmp.7 :equals;
+        %tmp.10 = invoke %tmp.7 %tmp.9 (%tmp.8);
+        bt %tmp.10 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_343_12_344_42_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 345 12 ]
+        %tmp.11 = dup %tmp.2;
+        %tmp.12 = 2;
+        %tmp.13 = getv function %tmp.11 :equals;
+        %tmp.14 = invoke %tmp.11 %tmp.13 (%tmp.12);
+        bt %tmp.14 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_345_12_346_42_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 347 12 ]
+        %tmp.15 = dup %tmp.2;
+        %tmp.16 = 3;
+        %tmp.17 = getv function %tmp.15 :equals;
+        %tmp.18 = invoke %tmp.15 %tmp.17 (%tmp.16);
+        bt %tmp.18 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_347_12_348_34_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 349 12 ]
+        %tmp.19 = dup %tmp.2;
+        %tmp.20 = 4;
+        %tmp.21 = getv function %tmp.19 :equals;
+        %tmp.22 = invoke %tmp.19 %tmp.21 (%tmp.20);
+        bt %tmp.22 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_349_12_350_34_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 351 12 ]
+        %tmp.23 = dup %tmp.2;
+        %tmp.24 = 5;
+        %tmp.25 = getv function %tmp.23 :equals;
+        %tmp.26 = invoke %tmp.23 %tmp.25 (%tmp.24);
+        bt %tmp.26 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_351_12_352_35_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 353 12 ]
+        %tmp.27 = dup %tmp.2;
+        %tmp.28 = 6;
+        %tmp.29 = getv function %tmp.27 :equals;
+        %tmp.30 = invoke %tmp.27 %tmp.29 (%tmp.28);
+        bt %tmp.30 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_353_12_354_43_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 355 12 ]
+        %tmp.31 = dup %tmp.2;
+        %tmp.32 = 7;
+        %tmp.33 = getv function %tmp.31 :equals;
+        %tmp.34 = invoke %tmp.31 %tmp.33 (%tmp.32);
+        bt %tmp.34 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_355_12_356_39_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 357 12 ]
+        %tmp.35 = dup %tmp.2;
+        %tmp.36 = 8;
+        %tmp.37 = getv function %tmp.35 :equals;
+        %tmp.38 = invoke %tmp.35 %tmp.37 (%tmp.36);
+        bt %tmp.38 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_357_12_358_33_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 359 12 ]
+        %tmp.39 = dup %tmp.2;
+        %tmp.40 = 9;
+        %tmp.41 = getv function %tmp.39 :equals;
+        %tmp.42 = invoke %tmp.39 %tmp.41 (%tmp.40);
+        bt %tmp.42 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_359_12_360_34_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 361 12 ]
+        %tmp.43 = dup %tmp.2;
+        %tmp.44 = 10;
+        %tmp.45 = getv function %tmp.43 :equals;
+        %tmp.46 = invoke %tmp.43 %tmp.45 (%tmp.44);
+        bt %tmp.46 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_361_12_362_34_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 363 12 ]
+        %tmp.47 = dup %tmp.2;
+        %tmp.48 = 11;
+        %tmp.49 = getv function %tmp.47 :equals;
+        %tmp.50 = invoke %tmp.47 %tmp.49 (%tmp.48);
+        bt %tmp.50 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_363_12_364_46_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 365 12 ]
+        %tmp.51 = dup %tmp.2;
+        %tmp.52 = 12;
+        %tmp.53 = getv function %tmp.51 :equals;
+        %tmp.54 = invoke %tmp.51 %tmp.53 (%tmp.52);
+        bt %tmp.54 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_365_12_366_52_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 367 12 ]
+        %tmp.55 = dup %tmp.2;
+        %tmp.56 = 13;
+        %tmp.57 = getv function %tmp.55 :equals;
+        %tmp.58 = invoke %tmp.55 %tmp.57 (%tmp.56);
+        bt %tmp.58 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_367_12_368_50_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 369 12 ]
+        %tmp.59 = dup %tmp.2;
+        %tmp.60 = 14;
+        %tmp.61 = getv function %tmp.59 :equals;
+        %tmp.62 = invoke %tmp.59 %tmp.61 (%tmp.60);
+        bt %tmp.62 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_369_12_370_39_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 371 12 ]
+        %tmp.63 = dup %tmp.2;
+        %tmp.64 = 15;
+        %tmp.65 = getv function %tmp.63 :equals;
+        %tmp.66 = invoke %tmp.63 %tmp.65 (%tmp.64);
+        bt %tmp.66 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_371_12_372_39_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 373 12 ]
+        %tmp.67 = dup %tmp.2;
+        %tmp.68 = 16;
+        %tmp.69 = getv function %tmp.67 :equals;
+        %tmp.70 = invoke %tmp.67 %tmp.69 (%tmp.68);
+        bt %tmp.70 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_373_12_374_39_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 375 12 ]
+        %tmp.71 = dup %tmp.2;
+        %tmp.72 = 17;
+        %tmp.73 = getv function %tmp.71 :equals;
+        %tmp.74 = invoke %tmp.71 %tmp.73 (%tmp.72);
+        bt %tmp.74 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_375_12_376_39_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 377 12 ]
+        %tmp.75 = dup %tmp.2;
+        %tmp.76 = 18;
+        %tmp.77 = getv function %tmp.75 :equals;
+        %tmp.78 = invoke %tmp.75 %tmp.77 (%tmp.76);
+        bt %tmp.78 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_377_12_378_43_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 379 12 ]
+        %tmp.79 = dup %tmp.2;
+        %tmp.80 = 19;
+        %tmp.81 = getv function %tmp.79 :equals;
+        %tmp.82 = invoke %tmp.79 %tmp.81 (%tmp.80);
+        bt %tmp.82 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_379_12_380_43_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 381 12 ]
+        %tmp.83 = dup %tmp.2;
+        %tmp.84 = 20;
+        %tmp.85 = getv function %tmp.83 :equals;
+        %tmp.86 = invoke %tmp.83 %tmp.85 (%tmp.84);
+        bt %tmp.86 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_381_12_382_36_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 383 12 ]
+        %tmp.87 = dup %tmp.2;
+        %tmp.88 = 21;
+        %tmp.89 = getv function %tmp.87 :equals;
+        %tmp.90 = invoke %tmp.87 %tmp.89 (%tmp.88);
+        bt %tmp.90 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_383_12_384_38_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 385 12 ]
+        %tmp.91 = dup %tmp.2;
+        %tmp.92 = 22;
+        %tmp.93 = getv function %tmp.91 :equals;
+        %tmp.94 = invoke %tmp.91 %tmp.93 (%tmp.92);
+        bt %tmp.94 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_385_12_386_41_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 387 12 ]
+        %tmp.95 = dup %tmp.2;
+        %tmp.96 = 23;
+        %tmp.97 = getv function %tmp.95 :equals;
+        %tmp.98 = invoke %tmp.95 %tmp.97 (%tmp.96);
+        bt %tmp.98 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_387_12_388_41_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 389 12 ]
+        %tmp.99 = dup %tmp.2;
+        %tmp.100 = 24;
+        %tmp.101 = getv function %tmp.99 :equals;
+        %tmp.102 = invoke %tmp.99 %tmp.101 (%tmp.100);
+        bt %tmp.102 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_389_12_390_42_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 391 12 ]
+        %tmp.103 = dup %tmp.2;
+        %tmp.104 = 25;
+        %tmp.105 = getv function %tmp.103 :equals;
+        %tmp.106 = invoke %tmp.103 %tmp.105 (%tmp.104);
+        bt %tmp.106 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_391_12_392_37_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 393 12 ]
+        %tmp.107 = dup %tmp.2;
+        %tmp.108 = 26;
+        %tmp.109 = getv function %tmp.107 :equals;
+        %tmp.110 = invoke %tmp.107 %tmp.109 (%tmp.108);
+        bt %tmp.110 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_393_12_394_42_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 395 12 ]
+        %tmp.111 = dup %tmp.2;
+        %tmp.112 = 27;
+        %tmp.113 = getv function %tmp.111 :equals;
+        %tmp.114 = invoke %tmp.111 %tmp.113 (%tmp.112);
+        bt %tmp.114 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_395_12_396_45_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 397 12 ]
+        %tmp.115 = dup %tmp.2;
+        %tmp.116 = 28;
+        %tmp.117 = getv function %tmp.115 :equals;
+        %tmp.118 = invoke %tmp.115 %tmp.117 (%tmp.116);
+        bt %tmp.118 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_397_12_398_51_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 399 12 ]
+        %tmp.119 = dup %tmp.2;
+        %tmp.120 = 29;
+        %tmp.121 = getv function %tmp.119 :equals;
+        %tmp.122 = invoke %tmp.119 %tmp.121 (%tmp.120);
+        bt %tmp.122 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_399_12_400_34_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 401 12 ]
+        %tmp.123 = dup %tmp.2;
+        %tmp.124 = 30;
+        %tmp.125 = getv function %tmp.123 :equals;
+        %tmp.126 = invoke %tmp.123 %tmp.125 (%tmp.124);
+        bt %tmp.126 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_401_12_402_34_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 403 12 ]
+        %tmp.127 = dup %tmp.2;
+        %tmp.128 = 31;
+        %tmp.129 = getv function %tmp.127 :equals;
+        %tmp.130 = invoke %tmp.127 %tmp.129 (%tmp.128);
+        bt %tmp.130 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_403_12_404_37_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 405 12 ]
+        %tmp.131 = dup %tmp.2;
+        %tmp.132 = 32;
+        %tmp.133 = getv function %tmp.131 :equals;
+        %tmp.134 = invoke %tmp.131 %tmp.133 (%tmp.132);
+        bt %tmp.134 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_405_12_406_37_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 407 12 ]
+        %tmp.135 = dup %tmp.2;
+        %tmp.136 = 33;
+        %tmp.137 = getv function %tmp.135 :equals;
+        %tmp.138 = invoke %tmp.135 %tmp.137 (%tmp.136);
+        bt %tmp.138 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_407_12_408_35_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 409 12 ]
+        %tmp.139 = dup %tmp.2;
+        %tmp.140 = 34;
+        %tmp.141 = getv function %tmp.139 :equals;
+        %tmp.142 = invoke %tmp.139 %tmp.141 (%tmp.140);
+        bt %tmp.142 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_409_12_410_33_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 411 12 ]
+        %tmp.143 = dup %tmp.2;
+        %tmp.144 = 35;
+        %tmp.145 = getv function %tmp.143 :equals;
+        %tmp.146 = invoke %tmp.143 %tmp.145 (%tmp.144);
+        bt %tmp.146 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_411_12_412_34_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 413 12 ]
+        %tmp.147 = dup %tmp.2;
+        %tmp.148 = 36;
+        %tmp.149 = getv function %tmp.147 :equals;
+        %tmp.150 = invoke %tmp.147 %tmp.149 (%tmp.148);
+        bt %tmp.150 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_413_12_414_36_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 415 12 ]
+        %tmp.151 = dup %tmp.2;
+        %tmp.152 = 37;
+        %tmp.153 = getv function %tmp.151 :equals;
+        %tmp.154 = invoke %tmp.151 %tmp.153 (%tmp.152);
+        bt %tmp.154 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_415_12_416_39_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 417 12 ]
+        %tmp.155 = dup %tmp.2;
+        %tmp.156 = 38;
+        %tmp.157 = getv function %tmp.155 :equals;
+        %tmp.158 = invoke %tmp.155 %tmp.157 (%tmp.156);
+        bt %tmp.158 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_417_12_418_41_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 419 12 ]
+        %tmp.159 = dup %tmp.2;
+        %tmp.160 = 39;
+        %tmp.161 = getv function %tmp.159 :equals;
+        %tmp.162 = invoke %tmp.159 %tmp.161 (%tmp.160);
+        bt %tmp.162 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_419_12_420_34_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 421 12 ]
+        %tmp.163 = dup %tmp.2;
+        %tmp.164 = 40;
+        %tmp.165 = getv function %tmp.163 :equals;
+        %tmp.166 = invoke %tmp.163 %tmp.165 (%tmp.164);
+        bt %tmp.166 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_421_12_422_34_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 423 12 ]
+        %tmp.167 = dup %tmp.2;
+        %tmp.168 = 41;
+        %tmp.169 = getv function %tmp.167 :equals;
+        %tmp.170 = invoke %tmp.167 %tmp.169 (%tmp.168);
+        bt %tmp.170 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_423_12_424_39_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 425 12 ]
+        %tmp.171 = dup %tmp.2;
+        %tmp.172 = 42;
+        %tmp.173 = getv function %tmp.171 :equals;
+        %tmp.174 = invoke %tmp.171 %tmp.173 (%tmp.172);
+        bt %tmp.174 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_425_12_426_43_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 427 12 ]
+        %tmp.175 = dup %tmp.2;
+        %tmp.176 = 43;
+        %tmp.177 = getv function %tmp.175 :equals;
+        %tmp.178 = invoke %tmp.175 %tmp.177 (%tmp.176);
+        bt %tmp.178 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_427_12_428_42_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 429 12 ]
+        %tmp.179 = dup %tmp.2;
+        %tmp.180 = 44;
+        %tmp.181 = getv function %tmp.179 :equals;
+        %tmp.182 = invoke %tmp.179 %tmp.181 (%tmp.180);
+        bt %tmp.182 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_429_12_430_46_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 431 12 ]
+        %tmp.183 = dup %tmp.2;
+        %tmp.184 = 45;
+        %tmp.185 = getv function %tmp.183 :equals;
+        %tmp.186 = invoke %tmp.183 %tmp.185 (%tmp.184);
+        bt %tmp.186 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_431_12_432_48_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 433 12 ]
+        %tmp.187 = dup %tmp.2;
+        %tmp.188 = 46;
+        %tmp.189 = getv function %tmp.187 :equals;
+        %tmp.190 = invoke %tmp.187 %tmp.189 (%tmp.188);
+        bt %tmp.190 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_433_12_434_48_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 435 12 ]
+        %tmp.191 = dup %tmp.2;
+        %tmp.192 = 47;
+        %tmp.193 = getv function %tmp.191 :equals;
+        %tmp.194 = invoke %tmp.191 %tmp.193 (%tmp.192);
+        bt %tmp.194 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_435_12_436_52_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 437 12 ]
+        %tmp.195 = dup %tmp.2;
+        %tmp.196 = 48;
+        %tmp.197 = getv function %tmp.195 :equals;
+        %tmp.198 = invoke %tmp.195 %tmp.197 (%tmp.196);
+        bt %tmp.198 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_437_12_438_38_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 439 12 ]
+        %tmp.199 = dup %tmp.2;
+        %tmp.200 = 49;
+        %tmp.201 = getv function %tmp.199 :equals;
+        %tmp.202 = invoke %tmp.199 %tmp.201 (%tmp.200);
+        bt %tmp.202 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_439_12_440_42_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 441 12 ]
+        %tmp.203 = dup %tmp.2;
+        %tmp.204 = 50;
+        %tmp.205 = getv function %tmp.203 :equals;
+        %tmp.206 = invoke %tmp.203 %tmp.205 (%tmp.204);
+        bt %tmp.206 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_441_12_442_35_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 443 12 ]
+        %tmp.207 = dup %tmp.2;
+        %tmp.208 = 51;
+        %tmp.209 = getv function %tmp.207 :equals;
+        %tmp.210 = invoke %tmp.207 %tmp.209 (%tmp.208);
+        bt %tmp.210 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_443_12_444_37_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 445 12 ]
+        %tmp.211 = dup %tmp.2;
+        %tmp.212 = 52;
+        %tmp.213 = getv function %tmp.211 :equals;
+        %tmp.214 = invoke %tmp.211 %tmp.213 (%tmp.212);
+        bt %tmp.214 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_445_12_446_40_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 447 12 ]
+        %tmp.215 = dup %tmp.2;
+        %tmp.216 = 53;
+        %tmp.217 = getv function %tmp.215 :equals;
+        %tmp.218 = invoke %tmp.215 %tmp.217 (%tmp.216);
+        bt %tmp.218 @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_447_12_448_37_switchCase;
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 449 12 ]
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_340_8_451_8_switchStmtDefault:
+        goto @C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_340_8_451_8_defaultCodeBegin;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_341_12_342_35_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 342 16 ]
+        %tmp.220 = getv ? :clearWeather;
+        ret %tmp.220;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_343_12_344_42_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 344 16 ]
+        %tmp.222 = getv ? :partlyCloudyWeather;
+        ret %tmp.222;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_345_12_346_42_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 346 16 ]
+        %tmp.224 = getv ? :mostlyCloudyWeather;
+        ret %tmp.224;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_347_12_348_34_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 348 16 ]
+        %tmp.226 = getv ? :rainWeather;
+        ret %tmp.226;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_349_12_350_34_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 350 16 ]
+        %tmp.228 = getv ? :snowWeather;
+        ret %tmp.228;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_351_12_352_35_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 352 16 ]
+        %tmp.230 = getv ? :windyWeather;
+        ret %tmp.230;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_353_12_354_43_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 354 16 ]
+        %tmp.232 = getv ? :thunderstormsWeather;
+        ret %tmp.232;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_355_12_356_39_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 356 16 ]
+        %tmp.234 = getv ? :wintryMixWeather;
+        ret %tmp.234;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_357_12_358_33_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 358 16 ]
+        %tmp.236 = getv ? :fogWeather;
+        ret %tmp.236;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_359_12_360_34_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 360 16 ]
+        %tmp.238 = getv ? :hazyWeather;
+        ret %tmp.238;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_361_12_362_34_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 362 16 ]
+        %tmp.240 = getv ? :hailWeather;
+        ret %tmp.240;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_363_12_364_46_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 364 16 ]
+        %tmp.242 = getv ? :scatteredShowersWeather;
+        ret %tmp.242;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_365_12_366_52_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 366 16 ]
+        %tmp.244 = getv ? :scatteredThunderstormsWeather;
+        ret %tmp.244;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_367_12_368_50_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 368 16 ]
+        %tmp.246 = getv ? :unknownPrecipitationWeather;
+        ret %tmp.246;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_369_12_370_39_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 370 16 ]
+        %tmp.248 = getv ? :lightRainWeather;
+        ret %tmp.248;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_371_12_372_39_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 372 16 ]
+        %tmp.250 = getv ? :heavyRainWeather;
+        ret %tmp.250;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_373_12_374_39_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 374 16 ]
+        %tmp.252 = getv ? :lightSnowWeather;
+        ret %tmp.252;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_375_12_376_39_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 376 16 ]
+        %tmp.254 = getv ? :heavySnowWeather;
+        ret %tmp.254;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_377_12_378_43_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 378 16 ]
+        %tmp.256 = getv ? :lightRainSnowWeather;
+        ret %tmp.256;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_379_12_380_43_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 380 16 ]
+        %tmp.258 = getv ? :heavyRainSnowWeather;
+        ret %tmp.258;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_381_12_382_36_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 382 16 ]
+        %tmp.260 = getv ? :cloudyWeather;
+        ret %tmp.260;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_383_12_384_38_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 384 16 ]
+        %tmp.262 = getv ? :rainSnowWeather;
+        ret %tmp.262;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_385_12_386_41_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 386 16 ]
+        %tmp.264 = getv ? :partlyClearWeather;
+        ret %tmp.264;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_387_12_388_41_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 388 16 ]
+        %tmp.266 = getv ? :mostlyClearWeather;
+        ret %tmp.266;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_389_12_390_42_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 390 16 ]
+        %tmp.268 = getv ? :lightShowersWeather;
+        ret %tmp.268;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_391_12_392_37_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 392 16 ]
+        %tmp.270 = getv ? :showersWeather;
+        ret %tmp.270;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_393_12_394_42_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 394 16 ]
+        %tmp.272 = getv ? :heavyShowersWeather;
+        ret %tmp.272;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_395_12_396_45_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 396 16 ]
+        %tmp.274 = getv ? :chanceOfShowersWeather;
+        ret %tmp.274;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_397_12_398_51_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 398 16 ]
+        %tmp.276 = getv ? :chanceOfThunderstormsWeather;
+        ret %tmp.276;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_399_12_400_34_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 400 16 ]
+        %tmp.278 = getv ? :mistWeather;
+        ret %tmp.278;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_401_12_402_34_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 402 16 ]
+        %tmp.280 = getv ? :dustWeather;
+        ret %tmp.280;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_403_12_404_37_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 404 16 ]
+        %tmp.282 = getv ? :drizzleWeather;
+        ret %tmp.282;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_405_12_406_37_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 406 16 ]
+        %tmp.284 = getv ? :tornadoWeather;
+        ret %tmp.284;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_407_12_408_35_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 408 16 ]
+        %tmp.286 = getv ? :smokeWeather;
+        ret %tmp.286;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_409_12_410_33_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 410 16 ]
+        %tmp.288 = getv ? :iceWeather;
+        ret %tmp.288;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_411_12_412_34_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 412 16 ]
+        %tmp.290 = getv ? :sandWeather;
+        ret %tmp.290;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_413_12_414_36_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 414 16 ]
+        %tmp.292 = getv ? :squallWeather;
+        ret %tmp.292;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_415_12_416_39_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 416 16 ]
+        %tmp.294 = getv ? :sandstormWeather;
+        ret %tmp.294;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_417_12_418_41_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 418 16 ]
+        %tmp.296 = getv ? :volcanicAshWeather;
+        ret %tmp.296;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_419_12_420_34_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 420 16 ]
+        %tmp.298 = getv ? :hazeWeather;
+        ret %tmp.298;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_421_12_422_34_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 422 16 ]
+        %tmp.300 = getv ? :fairWeather;
+        ret %tmp.300;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_423_12_424_39_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 424 16 ]
+        %tmp.302 = getv ? :hurricaneWeather;
+        ret %tmp.302;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_425_12_426_43_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 426 16 ]
+        %tmp.304 = getv ? :tropicalStormWeather;
+        ret %tmp.304;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_427_12_428_42_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 428 16 ]
+        %tmp.306 = getv ? :chanceOfSnowWeather;
+        ret %tmp.306;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_429_12_430_46_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 430 16 ]
+        %tmp.308 = getv ? :chanceOfRainSnowWeather;
+        ret %tmp.308;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_431_12_432_48_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 432 16 ]
+        %tmp.310 = getv ? :cloudyChanceOfRainWeather;
+        ret %tmp.310;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_433_12_434_48_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 434 16 ]
+        %tmp.312 = getv ? :cloudyChanceOfSnowWeather;
+        ret %tmp.312;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_435_12_436_52_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 436 16 ]
+        %tmp.314 = getv ? :cloudyChanceOfRainSnowWeather;
+        ret %tmp.314;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_437_12_438_38_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 438 16 ]
+        %tmp.316 = getv ? :flurriesWeather;
+        ret %tmp.316;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_439_12_440_42_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 440 16 ]
+        %tmp.318 = getv ? :freezingRainWeather;
+        ret %tmp.318;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_441_12_442_35_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 442 16 ]
+        %tmp.320 = getv ? :sleetWeather;
+        ret %tmp.320;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_443_12_444_37_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 444 16 ]
+        %tmp.322 = getv ? :iceSnowWeather;
+        ret %tmp.322;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_445_12_446_40_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 446 16 ]
+        %tmp.324 = getv ? :thinCloudsWeather;
+        ret %tmp.324;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_447_12_448_37_switchCase:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 448 16 ]
+        %tmp.326 = getv ? :unknownWeather;
+        ret %tmp.326;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_449_12_450_37_switchCase:
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_340_8_451_8_defaultCodeBegin:
+[ "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc" 450 16 ]
+        %tmp.328 = getv ? :unknownWeather;
+        ret %tmp.328;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_340_8_451_8_switchStmtEnd:
+        pop;
+C_Users_Andreas_OneDrive_Dokumente_Saffron_Casa_Garmin_connect_IQ_BasicWatchFace_source_BasicWatchFaceView_mc_339_34_452_4_stop:
+    }
+}
+[ @file = "C:\Users\Andreas\OneDrive\Dokumente\Saffron Casa\Garmin\connect IQ\BasicWatchFace\source\BasicWatchFaceView.mc"; @line = 1; ]
+<init> {
+}
