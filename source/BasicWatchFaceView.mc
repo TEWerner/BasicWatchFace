@@ -4,6 +4,7 @@ import Toybox.System;
 import Toybox.WatchUi;
 import Toybox.Time.Gregorian;
 import Toybox.Weather;
+import Toybox.Application.Properties;
 
 class BasicWatchFaceView extends WatchUi.WatchFace {
     private var timeFont;
@@ -200,14 +201,24 @@ class BasicWatchFaceView extends WatchUi.WatchFace {
     }
 
     function drawTime(dc) {
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        var is12Hour = Properties.getValue("showMeridiemText");
+        System.println(is12Hour);
         var timeFormat = "$1$:$2$";
         var clockTime = System.getClockTime();
         var hours = clockTime.hour;
+        if (is12Hour)
+        {
+            var fontHeight = Graphics.getFontHeight(timeFont);
+            var meridiem = clockTime.hour < 12 ? "am" : "pm";
+            hours = hours > 12 ? hours - 12 : hours;
+            dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2 + fontHeight*0.4, 
+            dateFont, 
+            meridiem, 
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER );
+        }
         hours = hours.format("%02d");
         var timeString = Lang.format(timeFormat, [hours, clockTime.min.format("%02d")]);
-
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-
         dc.drawText(
             dc.getWidth() / 2,
             dc.getHeight() / 2,

@@ -1,0 +1,6 @@
+<settings>
+    <setting propertyKey="@Properties.showMeridiemText" title="@Strings.SettingsShowMeridiemTitle">
+    <settingConfig type="boolean" required="true"/>
+</setting>
+</settings>
+
