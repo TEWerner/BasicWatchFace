@@ -1,6 +1,21 @@
 <settings>
     <setting propertyKey="@Properties.showMeridiemText" title="@Strings.SettingsShowMeridiemTitle">
-    <settingConfig type="boolean" required="true"/>
-</setting>
+        <settingConfig type="boolean" required="true"/>
+    </setting>
+    <setting propertyKey="@Properties.showHeart" title="@Strings.SettingsShowHeartRate">
+        <settingConfig type="boolean" required="true"/>
+    </setting>
+    <setting propertyKey="@Properties.showDate" title="@Strings.SettingsShowDate">
+        <settingConfig type="boolean" required="true"/>
+    </setting>
+    <setting propertyKey="@Properties.showWeather" title="@Strings.SettingsShowWeather">
+        <settingConfig type="boolean" required="true"/>
+    </setting>
+    <setting propertyKey="@Properties.showBattery" title="@Strings.SettingsShowBattery">
+        <settingConfig type="boolean" required="true"/>
+    </setting>
+    <setting propertyKey="@Properties.showFootsteps" title="@Strings.SettingsShowSteps">
+        <settingConfig type="boolean" required="true"/>
+    </setting>
 </settings>
 

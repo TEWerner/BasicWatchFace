@@ -1,4 +1,9 @@
 <strings>
     <string id="AppName">BasicWatchFace</string>
     <string id="SettingsShowMeridiemTitle">Show AM / PM on 12-Hour Time</string>
+    <string id="SettingsShowWeather">Remove Weather Field</string>
+    <string id="SettingsShowSteps">Remove Steps Field</string>
+    <string id="SettingsShowHeartRate">Remove Heart Rate Field</string>
+    <string id="SettingsShowBattery">Remove Battery Symbol</string>
+    <string id="SettingsShowDate">Remove Date</string>
 </strings>

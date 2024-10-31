@@ -1,4 +1,9 @@
 <properties>
     <property id="appVersion" type="string">1.1</property>
     <property id="showMeridiemText" type="boolean">false</property>
+    <property id="showHeart" type="boolean">false</property>
+    <property id="showDate" type="boolean">false</property>
+    <property id="showWeather" type="boolean">false</property>
+    <property id="showBattery" type="boolean">false</property>
+    <property id="showFootsteps" type="boolean">false</property>
 </properties>

@@ -153,12 +153,17 @@ class BasicWatchFaceView extends WatchUi.WatchFace {
 
     function onUpdate(dc as Dc) as Void {
         View.onUpdate(dc);
+        if(!Properties.getValue("showHeart"))
+        {drawHR(dc);}
         drawTime(dc);
-        drawHR(dc);
-        drawSteps(dc);
-        drawDate(dc);
-        drawBattery(dc);
-        drawWeather(dc);
+        if(!Properties.getValue("showFootsteps"))
+        {drawSteps(dc);}
+        if(!Properties.getValue("showDate"))
+        {drawDate(dc);}
+        if(!Properties.getValue("showBattery"))
+        {drawBattery(dc);}
+        if(!Properties.getValue("showWeather"))
+        {drawWeather(dc);}
     }
 
     function drawWeather(dc) {
@@ -203,7 +208,6 @@ class BasicWatchFaceView extends WatchUi.WatchFace {
     function drawTime(dc) {
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         var is12Hour = Properties.getValue("showMeridiemText");
-        System.println(is12Hour);
         var timeFormat = "$1$:$2$";
         var clockTime = System.getClockTime();
         var hours = clockTime.hour;
@@ -229,7 +233,7 @@ class BasicWatchFaceView extends WatchUi.WatchFace {
     }
 
     function drawHR(dc) {
-      
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         var heartRate = retrieveHeartrateText();
 
         var dataWidth = dc.getTextWidthInPixels(heartRate, dataFont) + 40;
@@ -312,7 +316,7 @@ class BasicWatchFaceView extends WatchUi.WatchFace {
     function getDayName(dayNumber) {
         // Array of day names, assuming 1=Monday and so on
         var days = [
-            "Sun", "Mon", "Tues", "Wed",
+            "Sun", "Mon", "Tue", "Wed",
             "Thu", "Fri", "Sat"
         ];
 

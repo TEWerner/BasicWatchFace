@@ -86,6 +86,12 @@ module Rez {
     } // Layouts
 
     module Strings {
+        (:initialized) var SettingsShowWeather as ResourceId;
+        (:initialized) var SettingsShowSteps as ResourceId;
+        (:initialized) var SettingsShowMeridiemTitle as ResourceId;
+        (:initialized) var SettingsShowBattery as ResourceId;
+        (:initialized) var SettingsShowDate as ResourceId;
+        (:initialized) var SettingsShowHeartRate as ResourceId;
         (:initialized) var AppName as ResourceId;
     } // Strings
 
